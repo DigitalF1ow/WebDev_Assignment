@@ -35,13 +35,27 @@ nav ul li
    padding: 0em 0.9em 0em;
 }
 
+section.gallery {
+   display: block;
+   margin: 1em auto;
+   border: 1px solid #ccc;
+   width: 180px;
+   text-align: center;
+ }
+
+img
+ {
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 50%;
+ }
+
 footer {
    background-color: #f1f1f1;
    font-family: 'Open Sans';
    padding:30px;
-   left: 0;
-   bottom: 0;
-   height: 5em;
+   height: 10em;
    width: 100%;
-   position: fixed;
+   position: relative;
 }
