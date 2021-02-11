@@ -1,23 +1,151 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
-
 *
 {
-   margin: 0;
-   padding: 0;
-   font-size: 100%;
-   vertical-align: baseline;
-   border: 0;
+   margin:0;
+   padding:0;
+   font-family: 'Roboto', sans-serif;
 }
 
-.container
+.container 
 {
-   height: 100vh;
    width: 100%;
-   background-image : url(image/background_images1.jpg);
+   height: 100vh;
+   background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url(../images/background_image1.jpg);
    background-position: center;
    background-size: cover;
-   padding-left: 5%;
-   padding-right: 5%;
+   padding-left:8%;
+   padding-right: 8%;
    box-sizing: border-box;
-   position: relative;
+}
+
+.navbar
+{
+   height: 12%;
+   display: flex;
+   align-items: center;
+}
+
+.logo
+{
+   width: 100px;
+   cursor:pointer;
+}
+
+.menu-icon
+{
+   width: 30px;
+   cursor:pointer;
+   margin-left:40px;
+}
+
+nav
+{
+   flex: 1;
+   text-align: right;
+}
+
+nav ul li 
+{
+   list-style: none;
+   display: inline-block;
+   margin-left:60px
+}
+
+nav ul li a
+{
+   text-decoration: none;
+   color: #fff;
+   font-size: 13px;
+}
+.row
+{
+   display:flex;
+   height:88%;
+   align-items: center;
+}
+
+.col
+{
+   flex-basis:50%
+}
+
+h1
+{
+   color: #fff;
+   font-size: 100px;
+}
+
+p
+{
+   color:#fff;
+   font-size:20px
+}
+
+button
+{
+   width: 180px;
+   color: #000;
+   font-size: 12px;
+   padding: 12px 0;
+   background: #fff;
+   border: 0;
+   border-radius: 20px;
+   outline: none;
+   margin-top: 30px;
+   cursor: pointer;
+}
+
+.card
+{
+   width:200px;
+   height:230px;
+   display:inline-block;
+   border-radius:15px;
+   padding:15px 15px;
+   box-sizing:border-box;
+   cursor:pointer;
+   margin: 15px 40px;
+   background-image: url(../images/klcc.jpeg);
+   background-position: center;
+   background-size: cover;
+   transition: transform 1s;
+   
+
+}
+
+
+.card1
+{
+   background-image: url(../images/klcc.jpeg);
+}
+
+.card2
+{
+   background-image: url(../images/chinatown.jpg);
+}
+
+.card3
+{
+   background-image: url(../images/garden.jpg);
+}
+
+.card4
+{
+   background-image: url(../images/batucaves.jpg);
+}
+ 
+.card:hover
+{
+   transform: translate(-20px)
+}
+
+h5
+{
+   color: #000;
+   text-shadow: 0 0 5px #999;
+}
+
+.card p
+{
+   text-shadow: 0 0 15px #000;
+   font-size:8px;
 }
