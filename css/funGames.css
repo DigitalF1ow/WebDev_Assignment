@@ -17,6 +17,7 @@
    padding-left:8%;
    padding-right: 8%;
    box-sizing: border-box;
+justify-content: center;
 }
 
 .navbar
@@ -59,3 +60,4 @@ nav ul li a
    color: #fff;
    font-size: 1em;
 }
+
