@@ -83,18 +83,21 @@ h1
     animation: fadeInAnimationRight ease 2s;
     color: #fff;
     font-size: 4vh;
+    padding-bottom: 0.5em;
 }
 
 p{
     animation: fadeInAnimationRight ease 2s;
     color: #fff;
     font-size: 1em;
+    text-align: left;
 }
 
 .card
 {
    width:400px;
    height:450px;
+   display:inline-block;
    border-radius:15px;
    padding:2em 2em;
    box-sizing:border-box;
@@ -105,9 +108,22 @@ p{
    animation: fadeInAnimation ease 2s;
 }
 
-.cardRight
+.card1
 {
-    background-image: url(../images/pjstreet.jpg);
+   background-image: url(../images/sunway21.png);
+}
+
+.card2
+{
+   background-image: url(../images/klcc.jpeg);
+}
+.card3
+{
+   background-image: url(../images/pjstreet.jpg);
+}
+.card4
+{
+   background-image: url(../images/garden.jpg);
 }
 
 @keyframes fadeInAnimation { 
