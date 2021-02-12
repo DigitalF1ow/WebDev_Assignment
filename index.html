@@ -20,7 +20,6 @@
                 </nav>
                 <img src = "images/menu.png" class = "menu-icon">
             </div>
-
             <div class = "row">
                 <div class = "col">
                     <h1>Kuala Lumpur</h1>
@@ -64,6 +63,17 @@
                     </div>
                 </div>
             </div>
+            <section>
+                <video src ="video/yt1s.com - Kuala Lumpur  Malaysia  Cinematic Travel Video_1080p.mp4" autoplay="" muted="" loop =""></video>
+            </section>
         </div>
+        <script type = "text/javascript">
+            Let video = document.querySelector('video');
+            window.addEventListener('scroll', function()
+            {
+                Let value = 1 + window.scrollY/-600;
+                video.style.opactiy = value
+            })
+        </script>
     </body>
 </html>
