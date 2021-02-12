@@ -10,7 +10,6 @@
    width: 100%;
    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url(../images/background_image1.jpg);
    background-position: center;
-   background-attachment: fixed;
    background-size: cover;
    padding-left:8%;
    padding-right: 8%;
