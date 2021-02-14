@@ -94,14 +94,14 @@ h1
 {
     animation: fadeInAnimationRight ease 2s;
     color: #fff;
-    font-size: 4vh;
+    font-size: 3vh;
     padding-bottom: 0.5em;
 }
 
 .destinations p{
     animation: fadeInAnimationRight ease 2s;
     color: #fff;
-    font-size: 1em;
+    font-size: 2vh;
     text-align: left;
 }
 
@@ -177,7 +177,7 @@ h1
 }
 
 /*Responsive Web Design Part*/
-@media screen and (max-width: 600px) 
+@media screen and (max-width: 776px) 
 {
 
    .nav-header ul li 
@@ -194,16 +194,22 @@ h1
       margin-left:40px;
    }
 
-   h1, p
+   h1
    {
       text-align: center;
    }
+   
 
    .destinations
    {
       display: inline-block;
       height:100%;
       align-items: center;
+   }
+
+   .destinations p
+   {
+      padding: 1em 0;
    }
 
    .card
