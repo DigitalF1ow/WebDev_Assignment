@@ -33,9 +33,7 @@
 
 .menu-icon
 {
-   width: 30px;
-   cursor:pointer;
-   margin-left:40px;
+   display: none;
 }
 
 nav
@@ -148,5 +146,17 @@ h5
 {
    text-shadow: 1px 1px 8px #000000;
    font-size:0.6em;
+}
+
+/*Responsive Web Design Part*/
+@media screen and (max-width: 600px) 
+{
+   .menu-icon
+   {
+      display: block;
+      width: 30px;
+      cursor:pointer;
+      margin-left:40px;
+   }
 }
 
