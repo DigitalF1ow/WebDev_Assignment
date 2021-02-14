@@ -50,7 +50,7 @@
 {
    list-style: none;
    display: inline-block;
-   margin-left:60px
+   margin-left:60px;
 }
 
 .nav-header ul li a
@@ -90,15 +90,6 @@
     
 }
 
-.destinations .leftside
-{
-    text-align: left;
-}
-
-.destinations .rightside
-{
-    text-align: right;
-}
 h1
 {
     animation: fadeInAnimationRight ease 2s;
@@ -188,12 +179,24 @@ h1
 /*Responsive Web Design Part*/
 @media screen and (max-width: 600px) 
 {
+
+   .nav-header ul li 
+   {
+      display: none;
+      position: relative;
+      text-align: left;
+   }
    .menu-icon
    {
       display: block;
       width: 30px;
       cursor:pointer;
       margin-left:40px;
+   }
+
+   h1, p
+   {
+      text-align: center;
    }
 
    .destinations
