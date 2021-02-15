@@ -57,14 +57,15 @@ nav ul li a
 }
 .row
 {
-   display:flex;
+   display:grid;
+   grid-template-columns: auto auto;
    height:88%;
    align-items: center;
 }
 
 .col
 {
-   flex-basis:50%;
+   flex-basis:75%;
 }
 
 h1
@@ -146,6 +147,25 @@ h5
 {
    text-shadow: 1px 1px 8px #000000;
    font-size:0.6em;
+}
+
+.footer
+{
+   padding: 3em 8em;
+   background-color: darkslategrey;
+   align-items: center;
+}
+.footer-img
+{
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+}
+.footer-text
+{
+   color: #fff;
+   text-align: center;
+   padding: 0.5em 0;
 }
 
 /*Responsive Web Design Part*/
