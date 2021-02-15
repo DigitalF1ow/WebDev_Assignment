@@ -18,7 +18,6 @@
    padding-right: 8%;
    box-sizing: border-box;
 }
-
 .navbar
 {
    height: 12%;
@@ -34,11 +33,11 @@
 
 .menu-icon
 {
-   display: none;
    width: 30px;
    cursor:pointer;
    margin-left:40px;
 }
+
 
 .nav-header
 {
@@ -61,8 +60,6 @@
 }
 
 
-
-
 .banner-background
 {
    line-height: 500px;
@@ -70,39 +67,46 @@
    font-size: 3em;
    color: #fff;
    text-shadow: 1px 1px 8px #000000;
-   background-image: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)),url(../images/kualawide.png);
+   background-image: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)),url(../images/genting-highlands.jpg);
    background-position: center;
    background-repeat: no-repeat;
    background-size: cover;
    position: relative;
    height: 31.25rem;
-
-
 }
-.destinations
+
+.games
 {
-   
    display: grid;
    grid-template-columns: auto auto;
    height:88%;
    align-items: center;
    justify-content: end;
-    
+}
+
+.games .leftside
+{
+    text-align: left;
+}
+
+.games .rightside
+{
+    text-align: right;
 }
 
 h1
 {
-    animation: fadeInAnimationRight ease 2s;
-    color: #fff;
-    font-size: 3vh;
-    padding-bottom: 0.5em;
+   animation: fadeInAnimationRight ease 2s;
+   color: #fff;
+   font-size: 4vh;
+   padding-bottom: 0.5em;
 }
 
-.destinations p{
-    animation: fadeInAnimationRight ease 2s;
-    color: #fff;
-    font-size: 2vh;
-    text-align: left;
+.games p{
+   animation: fadeInAnimationRight ease 2s;
+   color: #fff;
+   font-size: 1em;
+   text-align: left;
 }
 
 .card
@@ -120,42 +124,50 @@ h1
    animation: fadeInAnimation ease 2s;
 }
 
-/*This is the cards extension*/
 .card1
 {
-   background-image: url(../images/sunway21.png);
+   background-image: url(../images/genting-highland-themepark.jpg);
 }
 
 .card2
 {
-   background-image: url(../images/klcc.jpeg);
+   background-image: url(../images/breakout.jpg);
 }
+
 .card3
 {
-   background-image: url(../images/pjstreet.jpg);
+   background-image: url(../images/hantu.jpg);
 }
+
 .card4
 {
-   background-image: url(../images/garden.jpg);
+   background-image: url(../images/aquaria.png);
 }
+
 .card5
 {
-   background-image: url(../images/ecopark.jpg);
+   background-image: url(../images/petrosains.jpg)
 }
+
+
 .card6
 {
-   background-image: url(../images/batucaves.jpg);
+   background-image: url(../images/superpark.jpg)
 }
+
+
 
 .desktop
 {
    display: block;
 }
 
+
 .mobile
 {
    display: none;
 }
+
 
 .footer
 {
@@ -179,25 +191,13 @@ h1
 /*Responsive Web Design Part*/
 @media screen and (max-width: 776px) 
 {
-   .nav-header ul li
+
+   .nav-header ul li 
    {
       display: none;
-   } 
-
-   .nav-header-responsive ul li 
-   {
-      display: block;
-      margin: 2em;
-      text-align: center;
+      position: relative;
+      text-align: left;
    }
-
-   .nav-header-responsive ul li a
-{
-   text-decoration: none;
-   color: #fff;
-   font-size: 1em;
-}
- 
    .menu-icon
    {
       display: block;
@@ -212,14 +212,14 @@ h1
    }
    
 
-   .destinations
+   .games
    {
       display: inline-block;
       height:100%;
       align-items: center;
    }
 
-   .destinations p
+   .games p
    {
       padding: 1em 0;
       text-align: center;

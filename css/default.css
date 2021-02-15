@@ -5,18 +5,6 @@
    font-family: 'Roboto', sans-serif;
 }
 
-.container 
-{
-   width: 100%;
-   height: 100vh;
-   background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url(../images/background_image1.jpg);
-   background-position: center;
-   background-size: cover;
-   padding-left:8%;
-   padding-right: 8%;
-   box-sizing: border-box;
-}
-
 .navbar
 {
    height: 12%;
@@ -32,9 +20,7 @@
 
 .menu-icon
 {
-   width: 30px;
-   cursor:pointer;
-   margin-left:40px;
+   display: none;
 }
 
 nav
@@ -47,7 +33,7 @@ nav ul li
 {
    list-style: none;
    display: inline-block;
-   margin-left:60px
+   margin-left:60px;
 }
 
 nav ul li a
@@ -58,14 +44,11 @@ nav ul li a
 }
 .row
 {
-   display:flex;
+   display:grid;
+   grid-template-columns: auto auto;
+   grid-gap: 10px; 
    height:88%;
    align-items: center;
-}
-
-.col
-{
-   flex-basis:50%;
 }
 
 h1
@@ -96,6 +79,7 @@ button
 
 .card
 {
+   align-self: center;
    width:200px;
    height:250px;
    display:inline-block;
@@ -148,4 +132,110 @@ h5
    text-shadow: 1px 1px 8px #000000;
    font-size:0.6em;
 }
+
+.footer
+{
+   padding: 3em 8em;
+   background-color: darkslategrey;
+   align-items: center;
+}
+.footer-img
+{
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+}
+.footer-text
+{
+   color: #fff;
+   text-align: center;
+   padding: 0.5em 0;
+}
+
+/*Responsive Web Design Part*/
+@media screen and (max-width: 768px) 
+{
+   .container 
+   {
+      width: 100%;
+      background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url(../images/background_image1.jpg);
+      background-position: center;
+      background-attachment: fixed;
+      background-size: cover;
+      box-sizing: border-box;
+   }
+   .menu-icon
+   {
+      display: block;
+      width: 30px;
+      cursor:pointer;
+      margin-left:40px;
+   }
+
+   .row
+   {
+      display:grid;
+      grid-template-columns: 50%;
+      height:88%;
+      justify-content: center;
+   }
+
+   .card
+   {
+      margin: 2em auto;
+   }
+   
+}
+
+/*Responsive Web Design Part - Desktop Smaller Size*/
+@media screen and (max-width: 1571px)
+{
+
+   .container 
+   {
+      width: 100%;
+      background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url(../images/background_image1.jpg);
+      background-position: center;
+      background-attachment: fixed;
+      background-size: cover;
+      padding: 0 8%;
+      box-sizing: border-box;
+   } 
+   .row
+   {
+      display:grid;
+      grid-template-columns: 60%;
+      grid-gap: 10px; 
+      height:88%;
+      justify-content: center;
+   }
+
+   .desc
+   {
+      text-align: center;
+      padding: 2em 0;
+   }
+}
+
+@media screen and (min-width: 1571px)
+{
+   .container 
+   {
+      
+      width: 100%;
+      height: 100vh;
+      background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url(../images/background_image1.jpg);
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-position: center;
+      background-size: cover;
+      padding-left:8%;
+      padding-right: 8%;
+      box-sizing: border-box;
+   }
+}
+
+
+
+
 
