@@ -11,13 +11,13 @@
    width: 100%;
    height:100vh;
    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url(../images/background_image1.jpg);
+   background-repeat: no-repeat;
    background-position: center;
    background-attachment: fixed;
    background-size: cover;
    padding-left:8%;
    padding-right: 8%;
    box-sizing: border-box;
-justify-content: center;
 }
 
 .navbar
@@ -41,23 +41,210 @@ justify-content: center;
 }
 
 
-nav
+.nav-header
 {
    flex: 1;
    text-align: right;
 }
 
-nav ul li 
+.nav-header ul li 
 {
    list-style: none;
    display: inline-block;
    margin-left:60px;
 }
 
-nav ul li a
+.nav-header ul li a
 {
    text-decoration: none;
    color: #fff;
    font-size: 1em;
 }
 
+
+.banner-background
+{
+   line-height: 500px;
+   text-align: center;
+   font-size: 3em;
+   color: #fff;
+   text-shadow: 1px 1px 8px #000000;
+   background-image: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)),url(../images/genting-highlands.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   position: relative;
+   height: 31.25rem;
+}
+
+.games
+{
+   display: grid;
+   grid-template-columns: auto auto;
+   height:88%;
+   align-items: center;
+   justify-content: end;
+}
+
+.games .leftside
+{
+    text-align: left;
+}
+
+.games .rightside
+{
+    text-align: right;
+}
+
+h1
+{
+   animation: fadeInAnimationRight ease 2s;
+   color: #fff;
+   font-size: 4vh;
+   padding-bottom: 0.5em;
+}
+
+.games p{
+   animation: fadeInAnimationRight ease 2s;
+   color: #fff;
+   font-size: 1em;
+   text-align: left;
+}
+
+.card
+{
+   width:400px;
+   height:450px;
+   display: block;
+   border-radius:15px;
+   padding:2em 2em;
+   box-sizing:border-box;
+   margin: 3em auto;
+   background-image: url(../images/klcc.jpeg);
+   background-position: center;
+   background-size: cover;
+   animation: fadeInAnimation ease 2s;
+}
+
+.card1
+{
+   background-image: url(../images/genting-highland-themepark.jpg);
+}
+
+.card2
+{
+   background-image: url(../images/breakout.jpg);
+}
+
+.card3
+{
+   background-image: url(../images/hantu.jpg);
+}
+
+.card4
+{
+   background-image: url(../images/aquaria.png);
+}
+
+.card5
+{
+   background-image: url(../images/petrosains.jpg)
+}
+
+
+.card6
+{
+   background-image: url(../images/superpark.jpg)
+}
+
+
+
+.desktop
+{
+   display: block;
+}
+
+
+.mobile
+{
+   display: none;
+}
+
+
+.footer
+{
+   padding: 3em 8em;
+   background-color: darkslategrey;
+   align-items: center;
+}
+.footer-img
+{
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+}
+.footer-text
+{
+   color: #fff;
+   text-align: center;
+   padding: 0.5em 0;
+}
+
+@media screen and (max-width: 600px) 
+{
+   .menu-icon
+   {
+      display: block;
+      width: 30px;
+      cursor:pointer;
+      margin-left:40px;
+   }
+
+   .games
+   {
+      display: inline-block;
+      height:100%;
+      align-items: center;
+   }
+
+   .card
+   {
+      width: 30vh;
+      height: 30vh;
+      border-radius:15px;
+      box-sizing:border-box;
+      margin: 3em auto;
+      animation: none;
+   }
+
+   .desktop
+   {
+      display: none;
+   }
+
+   .mobile
+   {
+      display: block;
+   }
+}
+
+@keyframes fadeInAnimation { 
+    0% { 
+        opacity: 0; 
+        transform: translate(-20px);
+    } 
+    100% { 
+        opacity: 1;
+        transform: translate(0px); 
+     } 
+}
+@keyframes fadeInAnimationRight { 
+    0% { 
+        opacity: 0; 
+        transform: translate(20px);
+    } 
+    100% { 
+        opacity: 1;
+        transform: translate(0px); 
+     } 
+} 
