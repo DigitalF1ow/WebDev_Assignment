@@ -10,7 +10,7 @@ function responsiveHeader()
     echo "<ul>";
     echo "<li><a href='fungame.html'>Fun Activity & Games</a></li>";
     echo "<li><a href='destinations.html'>Place To Visit</a></li>";
-    echo "<li><a href='#'>Plan Your Trip</a></li>";
+    echo "<li><a href='planTrip.html'>Plan Your Trip</a></li>";
     echo "</ul>";
     echo "</nav>";
     echo "<img src = 'images/menu.png' class = 'menu-icon' alt='menuIcon'>";

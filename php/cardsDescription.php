@@ -3,7 +3,7 @@
     include '../config/constants.php';
 
     $index = 0;
-    $sql = "SELECT *  FROM tbl_destinations";
+    $sql = "SELECT *  FROM destinations";
 
     
     //Executing Query

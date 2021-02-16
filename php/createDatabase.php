@@ -1,7 +1,7 @@
 <?php
 
  $connect = mysqli_connect("localhost", "root", "");
- $query = "CREATE DATABASE tourismDatabase";
+ $query = "CREATE DATABASE tourism-database";
 
  $result = mysqli_query($connect, $query);
 
