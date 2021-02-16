@@ -10,17 +10,10 @@
 </head>
 <body>
     <div class="container">
-    <header class = "navbar">
-        <a href="index.html"><img src = "images/visitKL.png" class ="logo" alt="homeIcon"></a>
-        <nav id="navheader" class="nav-header">
-            <ul>
-                <li><a href="fungame.html">Fun Activity & Games</a></li>
-                <li><a href="#">Place To Visit</a></li>
-                <li><a href="planTrip.html">Plan Your Trip</a></li>
-            </ul>
-        </nav>
-        <a href="javascript:void(0);" onclick="responsive()"><img src = "images/menu.png" class = "menu-icon" alt="menuIcon" ></a>
-    </header>
+    <?php
+        include 'php/responsiveLayout.php';
+        echo responsiveHeader();
+    ?>
     </div>
 
     <div class="banner-background">Places to Visit</div>
@@ -80,11 +73,12 @@
     </article>
     </div>
 
-    <footer class="footer">
-        <a href="index.html"><img src = "images/visitKL.png" class="footer-img" alt="homeIcon"></a>
-        <p class="footer-text">Copyright &copy; Visit Kuala Lumpur 2021</p>
-        <p class="footer-text">Made by courtesy of The Group of Life - Web Development Assignment</p>
-    </footer>
+    <?php
+        
+        echo responsiveFooter();
+    ?>
+
+    
 
 <script>
     function responsive()
