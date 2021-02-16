@@ -56,7 +56,7 @@
     else
     {
         //There are no destinations in the database
-        echo "<h1>There are no destinations added into the website for now! Please come back again later!</h1>";
+        echo "<h1 style='text-align: center;'>There are no destinations added into the website for now! Please come back again later!</h1>";
     }
 
 ?>
