@@ -1,7 +1,7 @@
 <?php
     
     //For Connecting to the Database. Easier to handle files and storing data in tables
-
+    //Declaring Constants 
     define('LOCALHOST', 'localhost');
     define('DB_USERNAME', 'root');
     define('DB_PASSWORD', '');

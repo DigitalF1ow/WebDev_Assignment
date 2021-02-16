@@ -18,12 +18,12 @@
     <div class="banner-background">Places to Visit</div>
 
     <div class="container">
-        
+
     <!--Changes will be made - Will be looped to make a number of destinations available using php/javascript-->
     <article class="destinations">
 
     <?php
-        include 'php/cardsDescription.php';
+        include 'php/cardsDestination.php';
     ?>
         
     </article>

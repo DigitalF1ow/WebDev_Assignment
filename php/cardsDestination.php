@@ -9,7 +9,7 @@
     //Executing Query
     $res = mysqli_query($connect, $sql);
     
-    //Count number of rows available
+    //Finding the No. of Rows collected
     $count = mysqli_num_rows($res);
     $index = 1;
 
