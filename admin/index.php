@@ -1,39 +1,15 @@
-<?php include('partials/menu.php') ?>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home - Administrator Panel</title>
+    <link rel="stylesheet" href="../css/admin.css">
+</head>
+<body>
+    <?php include 'partials/header.php' ?>
 
-        <!-- Main Content Section Start -->
+    <!--Make it to become a grid size while expand or smaller the screen-->
+    <?php include 'partials/footer.php' ?>
+</body>
 
-        <div class ="main-content">
-            <div class = "wrapper">
-                <h1>DASHBOARD</h1>
 
-                <div class = "col-4 text-center">
-                    <h1>5<h1>
-                    <br/>
-                    Categories
-                </div>
-
-                <div class = "col-4 text-center">
-                    <h1>5<h1>
-                    <br/>
-                    Categories
-                </div>
-
-                <div class = "col-4 text-center">
-                    <h1>5<h1>
-                    <br/>
-                    Categories
-                </div>
-
-                <div class = "col-4 text-center">
-                    <h1>5<h1>
-                    <br/>
-                    Categories
-                </div>
-
-                <div class="clearfix"></div>
-            </div>
-        </div>
-        <!-- Main Content Section Ends -->
-
-<?php include('partials/footer.php')?>
-        
+</html>

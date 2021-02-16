@@ -2,10 +2,10 @@
 {
    margin:0;
    padding:0;
-   font-family: 'Roboto', sans-serif;
+   font-family: 'Roboto', Arial , Helvetica , sans-serif;
    
 }
-
+/*This part for the main content of Destinations*/
 .container 
 {
    width: 100%;
@@ -60,9 +60,6 @@
    font-size: 1em;
 }
 
-
-
-
 .banner-background
 {
    line-height: 500px;
@@ -105,6 +102,7 @@ h1
     text-align: left;
 }
 
+/*Card Decorations*/
 .card
 {
    width:400px;
@@ -118,33 +116,6 @@ h1
    background-position: center;
    background-size: cover;
    animation: fadeInAnimation ease 2s;
-}
-
-/*This is the cards extension*/
-.card1
-{
-   background-image: url(../images/sunway21.png);
-}
-
-.card2
-{
-   background-image: url(../images/klcc.jpeg);
-}
-.card3
-{
-   background-image: url(../images/pjstreet.jpg);
-}
-.card4
-{
-   background-image: url(../images/garden.jpg);
-}
-.card5
-{
-   background-image: url(../images/ecopark.jpg);
-}
-.card6
-{
-   background-image: url(../images/batucaves.jpg);
 }
 
 .desktop
