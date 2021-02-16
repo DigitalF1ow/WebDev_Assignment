@@ -21,55 +21,11 @@
     <div class="container">
     <!--Changes will be made - Will be looped to make a number of destinations available using php/javascript-->
     <article class="destinations">
-        <div class="card card1"></div>
-        <section class="leftside">
-            <h1>If you are seeking for thrills and excitement, Sunway Lagoon is the way to look forward to.</h1>
-            <p>Sunway Lagoon is the one-stop place for fun over 90 attractions spread across 88 acres, Sunway Lagoon provides the ultimate theme park experience in 6 adventure zones.</p>
-        </section>
+
+    <?php
+        include 'php/cardsDescription.php';
+    ?>
         
-        <div class="card card2 mobile"></div>
-        <section class="rightside">
-            <h1>If you want to view the city from a bird's eye view, check out the Petronas Twin Towers.</h1>
-            <p>Petronas Twin Towers is a multipurpose development area in Kuala Lumpur, Malaysia. The area is located around Jalan Ampang, Jalan P. Ramlee, Jalan Binjai, Jalan Kia Peng and Jalan Pinang. There are also hotels within walking distance such as G Tower, 
-               Mandarin Oriental, Grand Hyatt Kuala Lumpur and InterContinental Kuala Lumpur. 
-            </p>
-        </section>
-        <div class="card card2 desktop"></div>
-
-        <div class="card card3"></div>
-        <section class="leftside">
-            <h1>Food lovers who want to thrive in the feast and richness of calories, come to Chinatown, Petaling Jaya</h1>
-            <p>Ask anyone who’s been to Malaysia about Petaling Street and they will cite it as a shopper’s haven, albeit in a different league when compared to its more glamourous counterparts, Bukit Bintang and KLCC. 
-                A well-known shopping district, the whole area transforms into a lively and vibrant night market after dark, with hundreds of stalls selling all kinds of stuff at dirt-cheap prices, making it the most happening night market in the city.</p>
-        </section>
-
-        <div class="card card4 mobile"></div>
-        <section class="rightside">
-            <h1>Perdana Botanical Garden Kuala Lumpur</h1>
-            <p>The Perdana Botanical Garden is located in the heart of Kuala Lumpur, it has been the green part of the city for over a decade.
-               It was originally a recreational park where the public are able to jog around the area but with the abundances of tropical plants planted in the park.
-               It is now revitalised and rehabilitated as a Botanical Garden for everyone to come and smell the flowers.
-            </p>
-        </section>
-        <div class="card card4 desktop" ></div>
-
-        <div class="card card5"></div>
-        <section class="leftside">
-            <h1>Those who wanted a get-away from the hustling and bustling of the concrete urbania are welcomed to the KL Eco Forest Park.</h1>
-            <p>Located in the heart of the city's centre and the only city in the world to preserve a rainforest in the country, the KL Eco Forest Park is one of the places
-                that is recommended for nature lovers out there. The park itself is actually a Bukit Nanas Forest Reserve and serves as a heritage in this city.
-                There are various types of trees, herbs to be found and a well-maintained walking trails for hiking lovers. There is also a camp site for those that are eager 
-                to have a campfire experience. Tons of activities can be done here too!
-            </p>
-        </section>
-
-        <div class="card card6 mobile"></div>
-        <section class="rightside">
-            <h1>Batu Caves</h1>
-            <p>Batu Caves, one of Kuala Lumpur’s most frequented tourist attractions, is a limestone hill comprising three major caves and a number of smaller ones. Located approximately 11 kilometres to the north of Kuala Lumpur, 
-                this 100-year-old temple features idols and statues erected inside the main caves and around it. Incorporated with interior limestone formations said to be around 400 million years old, the temple is considered an important religious landmark by Hindus.</p>
-        </section>
-        <div class="card card6 desktop"></div>
     </article>
     </div>
 
@@ -78,9 +34,8 @@
         echo responsiveFooter();
     ?>
 
-    
-
 <script>
+
     function responsive()
     {
         var responsiveId = document.getElementById("navheader");

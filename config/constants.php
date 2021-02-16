@@ -7,6 +7,6 @@
     define('DB_PASSWORD', '');
     define('DB_NAME', 'tourism-database');
 
-    $conn = mysqli_connect(LOCALHOST, DB_USERNAME, DB_PASSWORD);
-    $db_select = mysqli_select_db($conn, DB_NAME);
+    $connect = mysqli_connect(LOCALHOST, DB_USERNAME, DB_PASSWORD);
+    $db_select = mysqli_select_db($connect, DB_NAME);
 ?>

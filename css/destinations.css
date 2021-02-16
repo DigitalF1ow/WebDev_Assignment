@@ -5,7 +5,7 @@
    font-family: 'Roboto', Arial , Helvetica , sans-serif;
    
 }
-
+/*This part for the main content of Destinations*/
 .container 
 {
    width: 100%;
@@ -102,6 +102,7 @@ h1
     text-align: left;
 }
 
+/*Card Decorations*/
 .card
 {
    width:400px;

@@ -1,17 +1,65 @@
 <?php
 
-    include '../config/constants.php';
-
+    include 'config/constants.php';
     $index = 0;
-    $sql = "SELECT *  FROM destinations";
 
+    //Selecting all destinations from the table
+    $sql = "SELECT *  FROM destinations";
     
     //Executing Query
-    $res = mysqli_query($conn, $sql);
+    $res = mysqli_query($connect, $sql);
     
     //Count number of rows available
     $count = mysqli_num_rows($res);
+    $index = 1;
 
+    if ($count > 0)
+    {
+        //Printing all the destinations in the table
+        while($row = mysqli_fetch_assoc($res))
+        {
+
+            if ($index % 2 == 0)
+            {
+                $image = $row['destination_image'];
+                //get and print the values from individual columns
+                ?>
+                <div style="background-image: url(images/<?php echo $image ?>)" class='card mobile' ></div>
+                
+                <?php
+                echo "<section class='rightside'>";
+                echo "<h1>".$row['destination_name']."</h1>";
+                echo "<p>".$row['destination_desc']."</p>";
+                echo "</section>";
+                ?>
+
+                <div style="background-image: url(images/<?php echo $image ?>)" class='card desktop' ></div>
+                <?php
+            }
+            else
+            {
+                $image = $row['destination_image'];
+                //get and print the values from individual columns
+                ?>
+                <div style="background-image: url(images/<?php echo $image ?>)" class='card' ></div>
+                <?php
+                echo "<section class='leftside'>";
+                echo "<h1>".$row['destination_name']."</h1>";
+                echo "<p>".$row['destination_desc']."</p>";
+                echo "</section>";
+            }
+            $index++;
+            
+            
+        }
+    }
+    else
+    {
+        //There are no destinations in the database
+        echo "<h1>There are no destinations added into the website for now! Please come back again later!</h1>";
+    }
+
+    /*
     if ($index/2 == 0)
     {
         echo "<div class='card card1'></div>";
@@ -30,7 +78,7 @@
         echo "</section>";
         echo "<div class='card card2 desktop'></div>";
     }
-    
+    */
 
 
 ?>

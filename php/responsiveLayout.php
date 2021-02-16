@@ -2,8 +2,8 @@
 
 function responsiveHeader()
 {
-    include '../config/constants.php';
     
+
     echo "<div class ='navbar'>";
     echo "<a href='index.html'><img src = 'images/visitKL.png' class ='logo' alt='homeIcon'></a>";
     echo "<nav id='navheader' class='nav-header'>";
