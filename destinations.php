@@ -11,14 +11,14 @@
 <body>
     <div class="container">
     <?php
-        include 'php/responsiveLayout.php';
-        echo responsiveHeader();
+        include 'php/responsiveHeader.php';
     ?>
     </div>
 
     <div class="banner-background">Places to Visit</div>
 
     <div class="container">
+        
     <!--Changes will be made - Will be looped to make a number of destinations available using php/javascript-->
     <article class="destinations">
 
@@ -30,8 +30,7 @@
     </div>
 
     <?php
-        
-        echo responsiveFooter();
+        include 'php/responsiveFooter.php';
     ?>
 
 <script>

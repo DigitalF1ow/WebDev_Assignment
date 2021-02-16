@@ -10,17 +10,9 @@
 </head>
 <body>
     <div class = "container">
-        <header class = "navbar">
-            <a href="index.html"><img src = "images/visitKL.png" class ="logo"></a>
-            <nav class = "nav-header">
-                <ul>
-                    <li><a href="#">Fun Activity & Games</a></li>
-                    <li><a href="destinations.html">Place To Visit</a></li>
-                    <li><a href="planTrip.html">Plan Your Trip</a></li>
-                </ul>
-            </nav>
-            <img src = "images/menu.png" class = "menu-icon">
-        </header>
+        <?php
+            include 'php/responsiveHeader.php';
+        ?>
     </div>
     <div class = "banner-background"> Fun Activity & Games</div>
     <div class = "container">
@@ -85,10 +77,8 @@
             <div class="card card6 desktop"></div>
         </article>
     </div>
-    <footer class="footer">
-        <a href="index.html"><img src = "images/visitKL.png" class="footer-img"></a>
-        <p class="footer-text">Copyright &copy; Visit Kuala Lumpur 2021</p>
-        <p class="footer-text">Made by courtesy of The Group of Life - Web Development Assignment</p>
-    </footer>
+    <?php
+            include 'php/responsiveFooter.php';
+        ?>
 </body>
 </html>
