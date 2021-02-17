@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 17, 2021 at 08:17 AM
+-- Generation Time: Feb 17, 2021 at 12:00 PM
 -- Server version: 10.4.17-MariaDB
 -- PHP Version: 8.0.1
 
@@ -45,7 +45,9 @@ INSERT INTO `activities` (`activity_id`, `activity_name`, `activity_desc`, `acti
 (3, 'Hauntu', 'Hauntu is a blend of live theatre performance, role play and storytelling that comes together to provide an engaging experience that’s never been offered before in Kuala Lumpur. Much more than a haunted house, Hauntu features real actors, audience interaction, intricate mazes and interconnected storylines that centre around a colonial hotel filled with mystery and the paranormal. Participants not only get to take on roles within the storylines but also experience Malaysia in different eras from its pre-independence days right up to the present.', 'hantu.jpg', 'hauntu picture'),
 (4, 'Aquaria KLCC', 'Aquaria KLCC is a state-of-the-art oceanarium showcasing over 5,000 different exhibits of aquatic and land-bound creatures over a sprawling 60,000 square-foot space in the Concourse Level of the Kuala Lumpur Convention Centre. You can experience the cage rage where it is a custom-made underwater cage placed at the only \"Living Ocean\". We dare you get up-close and personal with our friendly sharks and other fascinating marine creatures!.', 'aquaria.png', 'aquaria KLCC picture'),
 (5, 'Petrosains Science Discovery Centre', 'Petrosains, The Discovery Centre - a museum about the science of petroleum? Hmm... sounds rather boring doesn\'t it? But actually it is not at all boring. This is one of Malaysia\'s best science museums with plenty to do and see whatever your age. It is located in Kuala Lumpur\'s most famous landmark, the Petronas Towers.', 'petrosains.jpg', 'Petrosains Science picture'),
-(7, 'Superpark Malaysia', 'SuperPark is the friendliest all-in-one indoor activity park on earth, delivering a unique experience of joyful play that excites and unites people all over the world, no matter their age or fitness level. Located in Avenue K Shopping Mall, the activity park boost over 25 fun, healthy and energizing activities in 3 themed areas including Flying Fox, Trampoline, Ice Skate, Baseball among others.', 'superpark.jpg', 'Superpark Malaysia picture');
+(7, 'Superpark Malaysia', 'SuperPark is the friendliest all-in-one indoor activity park on earth, delivering a unique experience of joyful play that excites and unites people all over the world, no matter their age or fitness level. Located in Avenue K Shopping Mall, the activity park boost over 25 fun, healthy and energizing activities in 3 themed areas including Flying Fox, Trampoline, Ice Skate, Baseball among others.', 'superpark.jpg', 'Superpark Malaysia picture'),
+(8, 'aaaa', 'aaa', 'Activity-Name-1032.jpg', 'aaaa'),
+(9, 'aaaa', 'dsdsdsd', 'Activity-Name-7583.jpg', 'ewewee');
 
 -- --------------------------------------------------------
 
@@ -113,13 +115,6 @@ CREATE TABLE `form` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `form`
---
-
-INSERT INTO `form` (`id`, `first_name`, `last_name`, `ic`, `email`, `area_code`, `phone_number`, `tour`, `numAdult`, `numChild`) VALUES
-(0, 'Darren', 'Abbot', '123456-13-1111', '123@gmail.com', 123, 123, 'Tour 2', 4, 8);
-
---
 -- Indexes for dumped tables
 --
 
@@ -155,7 +150,7 @@ ALTER TABLE `form`
 -- AUTO_INCREMENT for table `activities`
 --
 ALTER TABLE `activities`
-  MODIFY `activity_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `activity_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `admin`
@@ -168,6 +163,12 @@ ALTER TABLE `admin`
 --
 ALTER TABLE `destinations`
   MODIFY `destination_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+
+--
+-- AUTO_INCREMENT for table `form`
+--
+ALTER TABLE `form`
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
