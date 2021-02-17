@@ -30,7 +30,7 @@
             ?>
 
             <!-- Add Category Form Starts -->
-            <form action= "" method= "POST" entype = "multipart/form-data">
+            <form action= "" method= "POST" enctype = "multipart/form-data">
 
                 <table class ="tbl-30">
                     <tr>
@@ -79,15 +79,15 @@
                     //1. Get the data from form
                     $activity_name = $_POST['activity_name'];
                     $activity_desc = $_POST['activity_desc'];
-                    $activity_image = $_POST['image']; //<<<
+                    $activity_image = $_POST['image']; 
                     $activity_alt = $_POST['activity_alt'];
 
                     //2. Upload the image if selected
                     //Check whether the selected image is clicked or not and upload the image only if the image is selected
-                    if(isset($_FILES['image']['activity_name']))
+                    if(isset($_FILES['image']['name']))
                     {
                         //Get the details of the selected image
-                        $activity_image = $_FILES['image']['activity_name'];
+                        $activity_image = $_FILES['image']['name'];
 
                         //Check whether the image is selected or not and upload image only if selected
                         if($activity_image!="")
@@ -107,7 +107,7 @@
                             $src= $_FILES['image']['tmp_name'];
 
                             //Destination path for the image to be uploaded
-                            $dst = "../images".$activity_image;
+                            $dst = "../images/".$activity_image;
 
                             //Finally upload the food image
                             $upload = move_uploaded_file($src, $dst);
