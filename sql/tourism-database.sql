@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 17, 2021 at 07:02 AM
+-- Generation Time: Feb 17, 2021 at 08:17 AM
 -- Server version: 10.4.17-MariaDB
--- PHP Version: 7.3.26
+-- PHP Version: 8.0.1
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -34,6 +34,18 @@ CREATE TABLE `activities` (
   `activity_image` varchar(255) NOT NULL,
   `activity_alt` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `activities`
+--
+
+INSERT INTO `activities` (`activity_id`, `activity_name`, `activity_desc`, `activity_image`, `activity_alt`) VALUES
+(1, 'Skytropolis Indoor Theme Park', 'Spanning over 400,000 sq ft, Skytropolis Indoor Theme Park promises endless fun for everyone in the family! Experience a world of adventures in a convenient location at First World Plaza and adjacent to SkyAvenue. It is located at Genting Highlands, Pahang.', 'genting-highland-themepark.jpg', 'skytropolis genting picture'),
+(2, 'Breakout', 'BREAKOUT offers the first escape games with role playing and story lines which will allow you to enjoy an unforgettable and captivating experience. BREAKOUT goes beyond the usual concept of players being merely locked in a dark room and needing to find their way out with some clues. Here you will be immersed in a surreal ambiance similar to being part of an on-going scene from a movie! ', 'breakout.jpg', 'breakout picture'),
+(3, 'Hauntu', 'Hauntu is a blend of live theatre performance, role play and storytelling that comes together to provide an engaging experience that’s never been offered before in Kuala Lumpur. Much more than a haunted house, Hauntu features real actors, audience interaction, intricate mazes and interconnected storylines that centre around a colonial hotel filled with mystery and the paranormal. Participants not only get to take on roles within the storylines but also experience Malaysia in different eras from its pre-independence days right up to the present.', 'hantu.jpg', 'hauntu picture'),
+(4, 'Aquaria KLCC', 'Aquaria KLCC is a state-of-the-art oceanarium showcasing over 5,000 different exhibits of aquatic and land-bound creatures over a sprawling 60,000 square-foot space in the Concourse Level of the Kuala Lumpur Convention Centre. You can experience the cage rage where it is a custom-made underwater cage placed at the only \"Living Ocean\". We dare you get up-close and personal with our friendly sharks and other fascinating marine creatures!.', 'aquaria.png', 'aquaria KLCC picture'),
+(5, 'Petrosains Science Discovery Centre', 'Petrosains, The Discovery Centre - a museum about the science of petroleum? Hmm... sounds rather boring doesn\'t it? But actually it is not at all boring. This is one of Malaysia\'s best science museums with plenty to do and see whatever your age. It is located in Kuala Lumpur\'s most famous landmark, the Petronas Towers.', 'petrosains.jpg', 'Petrosains Science picture'),
+(7, 'Superpark Malaysia', 'SuperPark is the friendliest all-in-one indoor activity park on earth, delivering a unique experience of joyful play that excites and unites people all over the world, no matter their age or fitness level. Located in Avenue K Shopping Mall, the activity park boost over 25 fun, healthy and energizing activities in 3 themed areas including Flying Fox, Trampoline, Ice Skate, Baseball among others.', 'superpark.jpg', 'Superpark Malaysia picture');
 
 -- --------------------------------------------------------
 
@@ -140,10 +152,22 @@ ALTER TABLE `form`
 --
 
 --
+-- AUTO_INCREMENT for table `activities`
+--
+ALTER TABLE `activities`
+  MODIFY `activity_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+
+--
 -- AUTO_INCREMENT for table `admin`
 --
 ALTER TABLE `admin`
   MODIFY `admin_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT for table `destinations`
+--
+ALTER TABLE `destinations`
+  MODIFY `destination_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
