@@ -8,7 +8,7 @@
     echo "<ul>";
     echo "<li><a href='fungame.php'>Fun Activity & Games</a></li>";
     echo "<li><a href='destinations.php'>Place To Visit</a></li>";
-    echo "<li><a href='planTrip.html'>Plan Your Trip</a></li>";
+    echo "<li><a href='planTrip.php'>Plan Your Trip</a></li>";
     echo "</ul>";
     echo "</nav>";
     echo "<img src = 'images/menu.png' class = 'menu-icon' alt='menuIcon'>";
