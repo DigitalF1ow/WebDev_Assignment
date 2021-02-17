@@ -17,6 +17,7 @@
     <div class="regform">
         <h1> Tour Booking Form </h1>
     </div>
+
     <div class="main">
         
             <form action= "php/form.php" method="POST">
@@ -107,11 +108,10 @@
         </div>
             </form>
     </div>
-<div class = "container">
+
     <?php
         include 'php/responsiveFooter.php';
     ?>
-</div>
     <script>
 
         function responsive()
