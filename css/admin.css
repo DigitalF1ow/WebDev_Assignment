@@ -92,3 +92,29 @@ footer p
 {
     padding: 0.5em;
 }
+
+/*CSS for Login Page*/
+.login
+{
+    width:30%;
+    border: 1px solid gray;
+    margin: 15% auto;
+    padding: 2%;
+}
+
+.login h1, .login p
+{
+    padding: 1em;
+}
+
+.login-success
+{
+    padding-bottom: 1em;
+    text-align: center;
+}
+
+.login-failed
+{
+    padding-bottom: 1em; 
+    text-align: center;
+}
