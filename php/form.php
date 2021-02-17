@@ -9,6 +9,8 @@
     $numAdult = $_POST['numAdult'];
     $numChild = $_POST['numChild'];
 
+	include "../cost-Calculator.php";
+	
 	// Database connection
 	$conn = new mysqli('localhost','root','','tourism-database');
 	if($conn->connect_error){
