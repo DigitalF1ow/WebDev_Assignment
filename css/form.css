@@ -142,12 +142,12 @@
        }
    .option{
            position:relative;
-    left:200px;
+      left:200px;
        top:-37px;
        line-height: 40px;
        width:532px;
        height:40px;
-          border-radius: 6px;
+      border-radius: 6px;
        padding: 0 22px;
        font-size: 16px;
        color: #555; 
@@ -215,3 +215,75 @@
          -ms-transform: translate(-50%, -50%);
          transform: translate(-50%, -50%);
        }
+
+       .navbar
+       {
+          height: 12%;
+          display: flex;
+          align-items: center;
+       }
+       
+       .logo
+       {
+          width: 100px;
+          cursor:pointer;
+       }
+       
+       .menu-icon
+       {
+          display: none;
+          width: 30px;
+          cursor:pointer;
+          margin-left:40px;
+       }
+       
+       .nav-header
+       {
+          flex: 1;
+          text-align: right;
+       }
+       
+       .nav-header ul li 
+       {
+          list-style: none;
+          display: inline-block;
+          margin-left:60px;
+       }
+       
+       .nav-header ul li a
+       {
+          text-decoration: none;
+          color: #fff;
+          font-size: 1em;
+       }
+       
+       .footer
+       {
+          padding: 3em 8em;
+          background-color: darkslategrey;
+          align-items: center;
+       }
+       .footer-img
+       {
+          display: block;
+          margin-left: auto;
+          margin-right: auto;
+       }
+       .footer-text
+       {
+          color: #fff;
+          text-align: center;
+          padding: 0.5em 0;
+       }
+       .container 
+      {
+         width: 100%;
+         background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url(../images/background_image1.jpg);
+         background-repeat: no-repeat;
+         background-attachment: fixed;
+         background-position: center;
+         background-size: cover;
+         padding-left:8%;
+         padding-right: 8%;
+         box-sizing: border-box;
+      }

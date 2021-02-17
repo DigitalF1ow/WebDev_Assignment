@@ -2,13 +2,13 @@
 {
    margin:0;
    padding:0;
-   font-family: 'Roboto', sans-serif;
+   font-family: 'Roboto', Arial , Helvetica , sans-serif;
    
 }
-
+/*This part for the main content of Destinations*/
 .container 
 {
-    width: 100%;
+   width: 100%;
    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),url(../images/background_image1.jpg);
    background-repeat: no-repeat;
    background-attachment: fixed;
@@ -34,96 +34,187 @@
 
 .menu-icon
 {
+   display: none;
    width: 30px;
    cursor:pointer;
    margin-left:40px;
 }
 
-nav
+.nav-header
 {
    flex: 1;
    text-align: right;
 }
 
-nav ul li 
+.nav-header ul li 
 {
    list-style: none;
    display: inline-block;
-   margin-left:60px
+   margin-left:60px;
 }
 
-nav ul li a
+.nav-header ul li a
 {
    text-decoration: none;
    color: #fff;
    font-size: 1em;
 }
 
+.banner-background
+{
+   line-height: 500px;
+   text-align: center;
+   font-size: 3em;
+   color: #fff;
+   text-shadow: 1px 1px 8px #000000;
+   background-image: linear-gradient(rgba(0,0,0,0.25), rgba(0,0,0,0.25)),url(../images/kualawide.png);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size: cover;
+   position: relative;
+   height: 31.25rem;
+
+
+}
 .destinations
 {
-    display: grid;
-    grid-template-columns: auto auto;
-    height:88%;
-    align-items: center;
-    justify-content: end;
+   
+   display: grid;
+   grid-template-columns: auto auto;
+   height:88%;
+   align-items: center;
+   justify-content: end;
     
 }
 
-.destinations .leftside
-{
-    text-align: left;
-}
-
-.destinations .rightside
-{
-    text-align: right;
-}
 h1
 {
     animation: fadeInAnimationRight ease 2s;
     color: #fff;
-    font-size: 4vh;
+    font-size: 3vh;
     padding-bottom: 0.5em;
 }
 
-p{
+.destinations p{
     animation: fadeInAnimationRight ease 2s;
     color: #fff;
-    font-size: 1em;
+    font-size: 2vh;
     text-align: left;
 }
 
+/*Card Decorations*/
 .card
 {
    width:400px;
    height:450px;
-   display:inline-block;
+   display: block;
    border-radius:15px;
    padding:2em 2em;
    box-sizing:border-box;
-   margin: 2em 7em;
+   margin: 3em auto;
    background-image: url(../images/klcc.jpeg);
    background-position: center;
    background-size: cover;
    animation: fadeInAnimation ease 2s;
 }
 
-.card1
+.desktop
 {
-   background-image: url(../images/sunway21.png);
+   display: block;
 }
 
-.card2
+.mobile
 {
-   background-image: url(../images/klcc.jpeg);
+   display: none;
 }
-.card3
+
+.footer
 {
-   background-image: url(../images/pjstreet.jpg);
+   padding: 3em 8em;
+   background-color: darkslategrey;
+   align-items: center;
 }
-.card4
+.footer-img
 {
-   background-image: url(../images/garden.jpg);
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+}
+.footer-text
+{
+   color: #fff;
+   text-align: center;
+   padding: 0.5em 0;
+}
+
+/*Responsive Web Design Part*/
+@media screen and (max-width: 776px) 
+{
+   .nav-header ul li
+   {
+      display: none;
+   } 
+
+   .nav-header-responsive ul li 
+   {
+      display: block;
+      margin: 2em;
+      text-align: center;
+   }
+
+   .nav-header-responsive ul li a
+{
+   text-decoration: none;
+   color: #fff;
+   font-size: 1em;
+}
+ 
+   .menu-icon
+   {
+      display: block;
+      width: 30px;
+      cursor:pointer;
+      margin-left:40px;
+   }
+
+   h1
+   {
+      text-align: center;
+   }
+   
+
+   .destinations
+   {
+      display: inline-block;
+      height:100%;
+      align-items: center;
+   }
+
+   .destinations p
+   {
+      padding: 1em 0;
+      text-align: center;
+   }
+
+   .card
+   {
+      width: 30vh;
+      height: 30vh;
+      border-radius:15px;
+      box-sizing:border-box;
+      margin: 3em auto;
+      animation: none;
+   }
+
+   .desktop
+   {
+      display: none;
+   }
+
+   .mobile
+   {
+      display: block;
+   }
 }
 
 @keyframes fadeInAnimation { 
