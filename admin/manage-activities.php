@@ -10,7 +10,7 @@
 <body>
     <?php include 'partials/header.php' ?>
     <!--Make it to become a grid size while expand or smaller the screen-->
-    <section class="main-content ">
+    <section class="main-content">
         <h1>Manage Activities</h1>
     </section>
     
