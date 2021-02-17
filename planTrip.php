@@ -5,8 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tour Booking</title>
     <link href="css/form.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class = "container">
+        <?php
+            include 'php/responsiveHeader.php';
+        ?>
+    </div>
+    
     <div class="regform">
         <h1>
  Tour Booking Form</h1>
@@ -101,5 +108,27 @@ Are you beginner?</h2>
     </div>
         </form>
 </div>
+<div class = "container">
+    <?php
+        include 'php/responsiveFooter.php';
+    ?>
+</div>
+    <script>
+
+        function responsive()
+        {
+            var responsiveId = document.getElementById("navheader");
+            if(responsiveId.className === "nav-header")
+            {
+                responsiveId.className += "-responsive";
+            }
+            else
+            {
+                responsiveId.className = "nav-header";
+            }
+            
+        }
+    </script>
+
 </body>
 </html>
