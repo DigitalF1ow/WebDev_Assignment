@@ -84,7 +84,7 @@ form{
    top:-45px;
    }   
 .lastlabel{
-            position:relative;
+   position:relative;
    color:#E5E5E5;
    text-transform:capitalize;
    font-size:14px;
@@ -168,6 +168,18 @@ form{
    overflow:hidden;
 }
 
+.meetingDate{
+   position:relative;
+   left:200px;
+   top:-37px;
+   line-height: 40px;
+   width:266px;
+   border-radius: 6px;
+   padding: 0 22px;
+   font-size: 16px;
+   color: #555;  
+}
+
 .optionTravelers{
    position:relative;
    left:200px;
@@ -185,12 +197,7 @@ form{
 .option option{
    font-size:20px;
 }
-#coustomer{
-   margin-left:25px;
-   color:white;
-   font-size:18px;
 
-} 
 .radio{
    display:inline-block;
    padding-right:70px;

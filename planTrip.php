@@ -50,12 +50,11 @@
                     <option>Tour 2</option>
                     <option>Tour 3</option>
                 </select>
-    <!-- 
-                <h2 class="name">
-    Meeting Date</h2>
-                <input type="date" id="meetingDate" name="meetingDate">
-                </select>
-                -->
+    
+    <h2 class="name">Meeting Date</h2>
+    <input type="date" class ="meetingDate" name="meetingDate">
+    </select>
+        
     <h2 class="name"> Number of Travelers</h2>
     <select class="optionTravelers" name="numAdult">
                     <option disabled="disabled" selected="selected">--Adult--</option>
