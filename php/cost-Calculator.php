@@ -14,7 +14,7 @@
         case "tour3":
         $tourPrice += $tour3;
         break;
-        default: return "No option chosen";
+        default: echo "No tour chosen";
     } 
 
     $adultPrice = 0;
@@ -54,7 +54,7 @@
         case "10":
         $adultPrice = $adult * 10;
         break;
-        default: return "No option chosen";
+        default: echo "No adult chosen";
     }
 
     $childPrice = 0;
@@ -94,7 +94,7 @@
         case "10":
         $childPrice = $children * 10;
         break;
-        default: return "No option chosen";
+        default: echo "No children chosen";
     }
 
     calculateCost($tourPrice, $adultPrice, $childPrice);

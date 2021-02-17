@@ -46,9 +46,9 @@
     <h2 class="name">Tour</h2>
     <select class="option" name="tour">
                     <option disabled="disabled" selected="selected">--Choose option--</option>
-                    <option>Tour 1</option>
-                    <option>Tour 2</option>
-                    <option>Tour 3</option>
+                    <option value = "tour1">Tour 1</option>
+                    <option value = "tour2">Tour 2</option>
+                    <option value = "tour3">Tour 3</option>
                 </select>
     
     <h2 class="name">Meeting Date</h2>
