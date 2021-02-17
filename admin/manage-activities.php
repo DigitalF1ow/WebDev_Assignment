@@ -13,7 +13,29 @@
     <section class="main-content">
         <h1>Manage Activities</h1>
     </section>
-    
+
+    <br /><br />
+
+        <!-- Button to Add Admin -->
+        <a href = "<?php echo SITEURL; ?>admin/add-activity.php" class = "btn-primary"> Add Activity</a>
+
+        <br /><br /><br />
+
+        <?php
+            if(isset($_SESSION["add"]))
+            {
+                echo $_SESSION["add"];
+                unset($_SESSION['add']);
+            }
+        ?>
+
+        <table class = "tbl-full">
+            <tr>
+                <th>S.N.</th>
+                <th>Title</th>
+                <th>Price</th>
+                <th>Image</th>
+            </tr>
 
     <!--End of the main content-->
     <?php include 'partials/footer.php' ?>

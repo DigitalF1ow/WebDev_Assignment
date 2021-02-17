@@ -61,7 +61,7 @@
     <!--End of the main content-->
     <?php include 'partials/footer.php' ?>
 </body>
-
+</html>
 
 
 
