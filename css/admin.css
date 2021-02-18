@@ -67,10 +67,17 @@ header ul li a:hover
     text-align: center;
 }
 
+.main-content h1
+{
+    padding: 1em;
+}
+
 .main-content p
 {
+    margin: 1em;
     padding: 1em 1em;
 }
+
 
 .col-4
 {
@@ -83,7 +90,7 @@ header ul li a:hover
 /* Table and Buttons */
 .tbl-full
 {
-    padding: 0 10em;
+    padding: 5em 10em;
     width:100%;
 }
 
@@ -99,6 +106,14 @@ table tr td
     padding: 1%;
 }
 
+form
+{
+    text-align: left;
+    display: inline-block;
+    
+}
+
+
 .btn-primary
 {
     background-color: #1e90ff;
@@ -106,6 +121,7 @@ table tr td
     color: white;
     text-decoration: none;
     font-weight: bold;
+    
 }
 
 .btn-primary:hover
@@ -117,7 +133,7 @@ table tr td
 {
     background-color: #7bed9f;
     padding: 1%;
-    color: white;
+    color: black;
     text-decoration: none;
     font-weight: bold;
 }

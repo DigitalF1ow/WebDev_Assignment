@@ -12,6 +12,30 @@
     <!--Make it to become a grid size while expand or smaller the screen-->
     <section class="main-content ">
         <h1>Manage Destinations</h1>
+
+        <br><br>
+
+        <a href = "<?php echo SITEURL; ?>admin/add-destination.php" class = "btn-primary"> Add Destinations</a>
+        
+        <?php
+            //Getting the session echo from the add-destinations
+            if(isset($_SESSION["add"]))
+            {
+                echo $_SESSION["add"];
+                unset($_SESSION['add']);
+            }
+        ?>
+
+        <table class = "tbl-full">
+            <tr>
+                <th>S.N.</th>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Image</th>
+                <th>Alternate Image Name</th>
+            </tr>
+        </table>
+
     </section>
     
 
