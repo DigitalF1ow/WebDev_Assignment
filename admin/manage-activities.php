@@ -34,19 +34,72 @@
 
         <table class = "tbl-full">
             <tr>
-                <th>S.N.</th>
+                <th>No.</th>
                 <th>Name</th>
                 <th>Description</th>
                 <th>Image</th>
                 <th>Alternate Image Name</th>
             </tr>
-        </table>
-    </section>
+        
+        <?php
+            //Create a SQL Query to Get all the activity
+            $sql = "SELECT * FROM activities";
 
-    
+            //Execute the query
+            $res = mysqli_query($connect, $sql);
 
+            //Count rows to check whether we have activities or not
+            $count = mysqli_num_rows($res);
+
+            //Create serial number variable and set default value as 1
+            $sn=1;
+
+            if($count>0)
+            {
+                //We have activities in database
+                //Get the activities from database and display
+                while($row=mysqli_fetch_assoc($res))
+                {
+                    //get the values from individual columns
+                    $activity_name = $row['activity_name'];
+                    $activity_desc = $row['activity_desc'];
+                    $activity_image = $row['activity_image'];
+                    $activity_alt = $row['activity_alt'];
+                    ?>
+                    
+                    <tr>
+                        <td><?php echo $sn++;?></td>
+                        <td><?php echo $activity_name; ?></td>
+                        <td><?php echo $activity_desc; ?></td>
+                        <td><?php 
+                                //Check whether image exist
+                                if($activity_image=="")
+                                {
+                                    echo "<div class='error'>Image not added.</div>";
+                                }
+                                else
+                                {
+                                    ?>
+                                    <img src="<?php echo SITEURL; ?>images/<?php echo $activity_image?>" width= "100px">
+                                    <?php
+                                }
+                            ?>
+                        <td><?php echo $activity_alt; ?></td>
+                        <td>
+                            <a href = "#" class = "btn-secondary">Update Activity</a>
+                            <a href = "#" class = "btn-secondary">Delete Activity</a>
+                        </td>
+                    </tr>
+                    <?php
+                }
+            }
+            else
+            {
+                //food not added in database
+                echo "<tr><td colspan-'7' class-'error'> Activity not added yet.</td></tr>";
+            }
             
-
+        ?>
     <!--End of the main content-->
     <?php include 'partials/footer.php' ?>
 </body>

@@ -18,6 +18,7 @@
     <div class= "wrapper">
             <h1> Add Activity</h1> -->
 
+    
             <br><br>
 
             <?php
@@ -25,7 +26,6 @@
                 {
                     echo $_SESSION['upload'];
                     unset($_SESSION['upload']);
-
                 }
             ?>
 
