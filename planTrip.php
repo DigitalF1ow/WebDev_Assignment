@@ -17,7 +17,6 @@
     <div class="regform">
         <h1> Tour Booking Form </h1>
     </div>
-
     <div class="main">
         
         <form action= "php/form.php" method="POST">
@@ -83,7 +82,7 @@
                     <option value = "8">8</option>
                     <option value = "9">9</option>
                     <option value = "10">10</option>
-    </select> 
+    </select>
     <div class = center>
         <button type="submit">Submit</button>
     </div>
