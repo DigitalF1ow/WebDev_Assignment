@@ -27,7 +27,7 @@
     </div>
     <div class="main">
         
-        <form action= "php/form.php" method="POST">
+        <form action= "php/form.php" method="POST" autocomplete="off">
         <div id="name">
         <h2 class="name">Name </h2>
 
