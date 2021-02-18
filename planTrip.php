@@ -56,9 +56,9 @@
     <h2 class="name">Tour</h2>
     <select class="option" name="tour">
         <option disabled="disabled" selected="selected" value="">--Choose option--</option>
-        <option value = "tour1">Package A - Tour of the Cultural Ways</option>
-        <option value = "tour2">Package B - Tour of the Fun Fantasies</option>
-        <option value = "tour3">Package C - All in one Bombastica</option>
+        <option value = "tour1">Package A - Tour of the Cultural Ways (RM50) </option>
+        <option value = "tour2">Package B - Tour of the Fun Fantasies (RM60)</option>
+        <option value = "tour3">Package C - All in one Bombastica (RM70)</option>
     </select>
     
     <h2 class="name">Meeting Date</h2>
@@ -67,7 +67,7 @@
         
     <h2 class="name"> Number of Travelers</h2>
     <select class="optionTravelers" name="numAdult">
-                    <option disabled="disabled" selected="selected" value="">--Adult--</option>
+                    <option disabled="disabled" selected="selected" value="">--Adult(+RM20 per pax)--</option>
                     <option value = "0">0</option>
                     <option value = "1">1</option>
                     <option value = "2">2</option>
@@ -81,7 +81,7 @@
                     <option value = "10">10</option>
                 </select>
     <select class="optionTravelers" name="numChild">
-                    <option disabled="disabled" selected="selected" value="">--Child--</option>
+                    <option disabled="disabled" selected="selected" value="">--Child(+RM10 per pax)--</option>
                     <option value = "0">0</option>
                     <option value = "1">1</option>
                     <option value = "2">2</option>
