@@ -14,6 +14,14 @@
         ?>
     </div>
     
+    <?php
+            if(isset($_SESSION["add"]))
+            {
+                echo $_SESSION["add"];
+                unset($_SESSION['add']);
+            }
+            ?>
+            
     <div class="regform">
         <h1> Tour Booking Form </h1>
     </div>

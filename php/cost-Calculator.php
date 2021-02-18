@@ -99,9 +99,18 @@
 
     calculateCost($tourPrice, $adultPrice, $childPrice);
     
+    function function_alert($message) { 
+      
+        // Display the alert box  
+        echo "<script>alert('$message');
+        window.history.go(-1); 
+        </script>";
+    } 
+    
     function calculateCost($tourPrice, $adultPrice, $childPrice){
         $calculate = $tourPrice + $adultPrice + $childPrice;
-        echo "<br/>Cost : RM" . $calculate."<br/>";
+        function_alert("Reservation Success! Cost : RM" . $calculate); 
+        //echo "<br/>Cost : RM" . $calculate."<br/>";
         //echo "<script type = 'text/javascript'>alert('Cost : RM' . $calculate.'<br/>');</script>";
     } 
 ?>

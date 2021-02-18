@@ -1,4 +1,6 @@
+
 <?php
+	include "../config/constants.php";
 	$first_name = $_POST['first_name'];
 	$last_name = $_POST['last_name'];
 	$ic = $_POST['ic'];
@@ -11,6 +13,7 @@
 
 	include "cost-Calculator.php";
 
+
 	// Database connection
 	$conn = new mysqli('localhost','root','','tourism-database');
 	if($conn->connect_error){
@@ -20,8 +23,9 @@
 		$stmt = $conn->prepare("insert into form(first_name, last_name, ic, email, area_code, phone_number, tour, numAdult, numChild) values(?, ?, ?, ?, ?, ?, ?, ?, ?)");
 		$stmt->bind_param("ssssiisii", $first_name, $last_name, $ic, $email, $area_code, $phone_number, $tour, $numAdult, $numChild);
 		$stmt->execute();
-		echo "Registration successfully...";
-
+		//$_SESSION['add'] = 	"<div>Reservation Done!</div>";	
+        //header('location:'.SITEURL.'planTrip.php');
+		
 		$stmt->close();
 		$conn->close();
 	}
