@@ -9,7 +9,15 @@
 	$phone_number = $_POST['phone_number'];
     $tour = $_POST['tour'];
     $numAdult = $_POST['numAdult'];
-    $numChild = $_POST['numChild'];
+	$numChild = $_POST['numChild'];
+	
+	if ($first_name == "" || $last_name == "" || $ic == "" || $email == "" || $area_code == "" || $phone_number == "" || $tour == "" || $numAdult == "" || $numChild == "")
+	{
+		$_SESSION['validation-failed'] = "<script>alert('Your form is incomplete. Please fill up the entire form')</script>";
+		header('location:'.SITEURL.'planTrip.php');
+		die();
+		
+	}
 
 	include "cost-Calculator.php";
 

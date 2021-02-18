@@ -16,12 +16,12 @@
     </div>
     
     <?php
-            if(isset($_SESSION["add"]))
-            {
-                echo $_SESSION["add"];
-                unset($_SESSION['add']);
-            }
-            ?>
+        if(isset($_SESSION["add"]))
+        {
+            echo $_SESSION["add"];
+            unset($_SESSION['add']);
+        }
+    ?>
             
     <div class="regform">
         <h1> Tour Booking Form </h1>
@@ -38,6 +38,7 @@
         <label class="lastlabel">last name</label>
 
     </div>
+
     <h2 class="name"> IC/Passport No. </h2>
     <input class="ic" type="text" name="ic">
     <h2 class="name">Email</h2>
@@ -53,7 +54,13 @@
         
     <h2 class="name">Tour</h2>
     <select class="option" name="tour">
-                    <option disabled="disabled" selected="selected">--Choose option--</option>
+                    <option disabled="disabled" selected="selected" value="">--Choose option--</option>
+
+                    <?php
+                    
+
+                    
+                    ?>
                     <option value = "tour1">Tour 1</option>
                     <option value = "tour2">Tour 2</option>
                     <option value = "tour3">Tour 3</option>
@@ -65,7 +72,7 @@
         
     <h2 class="name"> Number of Travelers</h2>
     <select class="optionTravelers" name="numAdult">
-                    <option disabled="disabled" selected="selected">--Adult--</option>
+                    <option disabled="disabled" selected="selected" value="">--Adult--</option>
                     <option value = "0">0</option>
                     <option value = "1">1</option>
                     <option value = "2">2</option>
@@ -79,7 +86,7 @@
                     <option value = "10">10</option>
                 </select>
     <select class="optionTravelers" name="numChild">
-                    <option disabled="disabled" selected="selected">--Child--</option>
+                    <option disabled="disabled" selected="selected" value="">--Child--</option>
                     <option value = "0">0</option>
                     <option value = "1">1</option>
                     <option value = "2">2</option>
@@ -100,6 +107,12 @@
 
     <?php
         include 'php/responsiveFooter.php';
+
+        if(isset($_SESSION["validation-failed"]))
+        {
+            echo $_SESSION["validation-failed"];
+            unset($_SESSION['validation-failed']);
+        }
     ?>
 
 </body>
