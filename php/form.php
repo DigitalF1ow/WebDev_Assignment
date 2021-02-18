@@ -29,7 +29,7 @@
 		die("Connection Failed : ". $conn->connect_error);
 	} else {
 		$stmt = $conn->prepare("insert into form(first_name, last_name, ic, email, area_code, phone_number, tour, meeting_date, numAdult, numChild) values(?, ?, ?, ?, ?, ?, ?, ?, ?, ?)");
-		$stmt->bind_param("ssssiissii", $first_name, $last_name, $ic, $email, $area_code, $phone_number, $tour,$meeting_date $numAdult, $numChild);
+		$stmt->bind_param("ssssiissii", $first_name, $last_name, $ic, $email, $area_code, $phone_number, $tour,$meeting_date, $numAdult, $numChild);
 		$stmt->execute();
 		//$_SESSION['add'] = 	"<div>Reservation Done!</div>";	
         //header('location:'.SITEURL.'planTrip.php');
