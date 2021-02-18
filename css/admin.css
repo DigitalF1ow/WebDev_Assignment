@@ -92,22 +92,30 @@ header ul li a:hover
 {
     padding: 5em 10em;
     width:100%;
+    text-align: left;
 }
 
 table tr th
 {
     border-bottom: 1px solid black;
     padding: 1%;
-    text-align: left;
+    
 }
 
 table tr td
 {
-    padding: 1%;
+    padding: 2em;
+}
+
+.success
+{
+    margin-top: 2em;
+    color: green;
 }
 
 .error
 {
+    margin-top: 2em;
     color: red;
 }
 

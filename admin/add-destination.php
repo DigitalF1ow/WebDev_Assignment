@@ -103,7 +103,7 @@
                     if($upload==false)
                     {
                         //Failed to upload the image
-                        //Redirect to add activity page with error message
+                        //Redirect to add destination page with error message
                         $_SESSION['upload'] = "<div class = 'error'>Failed to upload image. Please contact the software developer for more information</div>";
                         header('location:'.SITEURL.'admin/add-destination.php');
                         //Stop the process
@@ -118,8 +118,8 @@
             $sql = "INSERT INTO destinations SET
                     destination_name = '$destination_name',
                     destination_desc = '$destination_desc',
-                    destination_desc = '$destination_image',
-                    destination_desc = '$destination_alt'
+                    destination_image = '$destination_image',
+                    destination_alt = '$destination_alt'
                     ";
 
             //Execute Query
