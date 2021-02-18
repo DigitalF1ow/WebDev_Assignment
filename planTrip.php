@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tour Booking</title>
     <link href="css/form.css" rel="stylesheet">
+    <link rel="icon" href="images/favicon1.ico" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 <body>

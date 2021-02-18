@@ -5,7 +5,7 @@
     <title> Destinations - Visit Kuala Lumpur</title>
     
     <link rel="stylesheet" href="css/destinations.css"/>
-
+    <link rel="icon" href="images/favicon1.ico" />
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
 </head>
 <body>
