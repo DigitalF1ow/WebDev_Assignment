@@ -39,7 +39,60 @@
                 <th>Description</th>
                 <th>Image</th>
                 <th>Alternate Image Name</th>
+                <th>Actions</th>
             </tr>
+
+            <?php
+
+                $sql = "SELECT * FROM destinations";
+
+                //Execute Query
+                $res = mysqli_query($connect, $sql);
+                $count = mysqli_num_rows($res);
+
+                //Check whether we have in data in database
+                if ($count > 0)
+                {
+                    //Display all these data
+                    while($row = mysqli_fetch_assoc($res))
+                    {
+                        $id = $row['destination_id'];
+                        $dest_name = $row['destination_name'];
+                        $dest_desc = $row['destination_desc'];
+                        $dest_image = $row['destination_image'];
+                        $dest_alt = $row['destination_alt'];
+
+                        ?>
+
+                        <tr>
+                            <td><?php echo $id;?></td>
+                            <td><?php echo $dest_name; ?></td>
+                            <td><?php echo $dest_desc; ?></td>
+                            <td><img src="<?php echo SITEURL;?>images/destinations/<?php echo $dest_image;?>" width="100px"></td>
+                            <td><?php echo $dest_alt; ?></td>
+                            <td>
+                                <a href="#" class="btn-secondary">Edit Destination</a>
+                                <a href="#" class="btn-danger">Delete Destination</a>
+                            </td>
+                        </tr>
+
+
+                        <?php
+                        
+                    }
+                    
+                }
+                else
+                {
+                    ?>
+                    <tr>
+                        <td colspan="6"><div class="error">No destinations is added</div></td>
+                    </tr>
+                    <?php
+                }
+
+            ?>
+
         </table>
 
     </section>

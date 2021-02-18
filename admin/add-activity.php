@@ -107,7 +107,7 @@
                             $src= $_FILES['image']['tmp_name'];
 
                             //Destination path for the image to be uploaded
-                            $dst = "../images/activities".$activity_image;
+                            $dst = "../images/activities/".$activity_image;
 
                             //Finally upload the food image
                             $upload = move_uploaded_file($src, $dst);
