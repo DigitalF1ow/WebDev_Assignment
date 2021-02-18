@@ -100,7 +100,7 @@
     calculateCost($tourPrice, $adultPrice, $childPrice);
 
     function calculateCost($tourPrice, $adultPrice, $childPrice){
-        echo $calculate = $tourPrice + $adultPrice + $childPrice;
-        return $calculate;
+        $calculate = $tourPrice + $adultPrice + $childPrice;
+        echo "<br/>Cost : RM" . $calculate."<br/>";
     }
 ?>
