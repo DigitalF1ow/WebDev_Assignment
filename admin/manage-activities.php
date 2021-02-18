@@ -80,14 +80,14 @@
                                 else
                                 {
                                     ?>
-                                    <img src="<?php echo SITEURL; ?>images/<?php echo $activity_image?>" width= "100px">
+                                    <img src="<?php echo SITEURL; ?>images/activities/<?php echo $activity_image?>" width= "100px">
                                     <?php
                                 }
                             ?>
                         <td><?php echo $activity_alt; ?></td>
                         <td>
-                            <a href = "#" class = "btn-secondary">Update Activity</a>
-                            <a href = "#" class = "btn-secondary">Delete Activity</a>
+                            <a href = "#" class = "btn-secondary">Edit Activity</a>
+                            <a href = "#" class = "btn-danger">Delete Activity</a>
                         </td>
                     </tr>
                     <?php
@@ -100,6 +100,8 @@
             }
             
         ?>
+        </table>
+    </section>
     <!--End of the main content-->
     <?php include 'partials/footer.php' ?>
 </body>

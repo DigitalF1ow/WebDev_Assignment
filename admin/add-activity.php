@@ -12,7 +12,7 @@
     <!--Make it to become a grid size while expand or smaller the screen-->
     <section class="main-content ">
         <h1>Add Activity</h1>
-    </section>
+    
     
     <!--<div class= "main-content">
     <div class= "wrapper">
@@ -68,7 +68,7 @@
                     </tr>
                 </table>
             </form>
-
+        </section>
             <?php
                 //Check whether the button is clicked or not
                 if(isset($_POST['submit']))
