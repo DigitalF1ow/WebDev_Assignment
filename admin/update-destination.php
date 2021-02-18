@@ -48,17 +48,8 @@
             }
         ?>
         
-        <?php
-            //To echo to the manage destinations page
-            if(isset($_SESSION['update']))
-            {
-                echo $_SESSION['update'];
-                unset($_SESSION['update']);
-            }
-        ?>
-
          <!-- Add Destination Form Starts -->
-         <form action= "" method= "POST" enctype = "multipart/form-data">
+         <form class="info-form" action= "" method= "POST" enctype = "multipart/form-data">
             <table>
                 <tr>
                     <td>Name: </td>
@@ -115,7 +106,7 @@
                     <td colspan = "2">
                         <input type="hidden" name="current_image" value= "<?php echo $current_destination_image; ?>">
                         <input type="hidden" name="dest_id" value= "<?php echo $destination_id; ?>">
-                        <input type = "submit" name = "submit" value= "Add Destination" class = "btn-secondary">
+                        <input type = "submit" name = "submit" value= "Update Destination" class = "btn-secondary">
                     </td>
                 </tr>
             </table>
