@@ -99,8 +99,8 @@
                                 }
                             ?>
                         <td><?php echo $activity_alt; ?></td>
-                        <td colspan="2">
-                            <a href = "#" class = "btn-secondary">Edit Activity</a>
+                        <td>
+                            <a href = "<?php echo SITEURL; ?>admin/update-activity.php?activity_id=<?php echo $activity_id; ?>" class = "btn-secondary">Edit Activity</a>
                             <a href = "<?php echo SITEURL; ?>admin/delete-activity.php?activity_id=<?php echo $activity_id; ?>&activity_image=<?php echo $activity_image;?>" class = "btn-danger">Delete Activity</a>
                         </td>
                     </tr>
