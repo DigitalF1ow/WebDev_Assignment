@@ -12,9 +12,8 @@
     <!--Make it to become a grid size while expand or smaller the screen-->
     <section class="main-content">
         <h1>Manage Activities</h1>
-    </section>
 
-    <br><br>
+        <br><br>
 
         <!-- Button to Add Admin -->
         <a href = "<?php echo SITEURL; ?>admin/add-activity.php" class = "btn-primary"> Add Activity</a>
@@ -37,6 +36,10 @@
                 <th>Image</th>
                 <th>Alternate Image Name</th>
             </tr>
+        </table>
+    </section>
+
+    
 
             
 

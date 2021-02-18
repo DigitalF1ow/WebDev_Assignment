@@ -83,6 +83,7 @@ header ul li a:hover
 /* Table and Buttons */
 .tbl-full
 {
+    padding: 0 10em;
     width:100%;
 }
 
