@@ -29,7 +29,20 @@
             {
                 echo $_SESSION["upload"];
                 unset($_SESSION['upload']);
-            } 
+            }
+            
+            if(isset($_SESSION["delete"]))
+            {
+                echo $_SESSION["delete"];
+                unset($_SESSION['delete']);
+            }
+
+            if(isset($_SESSION["unauthorize"]))
+            {
+                echo $_SESSION["unauthorize"];
+                unset($_SESSION['unauthorize']);
+            }
+            
         ?>
 
         <table class = "tbl-full">
@@ -60,7 +73,7 @@
                 while($row=mysqli_fetch_assoc($res))
                 {
                     //get the values from individual columns
-                    $id = $row['activity_id'];
+                    $activity_id = $row['activity_id'];
                     $activity_name = $row['activity_name'];
                     $activity_desc = $row['activity_desc'];
                     $activity_image = $row['activity_image'];
@@ -68,7 +81,7 @@
                     ?>
                     
                     <tr>
-                        <td><?php echo $id;?></td>
+                        <td><?php echo $activity_id;?></td>
                         <td><?php echo $activity_name; ?></td>
                         <td><?php echo $activity_desc; ?></td>
                         <td><?php 
@@ -87,7 +100,7 @@
                         <td><?php echo $activity_alt; ?></td>
                         <td>
                             <a href = "#" class = "btn-secondary">Edit Activity</a>
-                            <a href = "<?php echo SITEURL; ?>admin/delete-activity.php?id=<?php echo $id; ?>&activity_image=<?php echo $activity_image;?>" class = "btn-danger">Delete Activity</a>
+                            <a href = "<?php echo SITEURL; ?>admin/delete-activity.php?activity_id=<?php echo $activity_id; ?>&activity_image=<?php echo $activity_image;?>" class = "btn-danger">Delete Activity</a>
                         </td>
                     </tr>
                     <?php
