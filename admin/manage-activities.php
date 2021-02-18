@@ -39,6 +39,7 @@
                 <th>Description</th>
                 <th>Image</th>
                 <th>Alternate Image Name</th>
+                <th>Actions</th>
             </tr>
         
         <?php
@@ -51,8 +52,6 @@
             //Count rows to check whether we have activities or not
             $count = mysqli_num_rows($res);
 
-            //Create serial number variable and set default value as 1
-            $sn=1;
 
             if($count>0)
             {
@@ -61,6 +60,7 @@
                 while($row=mysqli_fetch_assoc($res))
                 {
                     //get the values from individual columns
+                    $id = $row['activity_id'];
                     $activity_name = $row['activity_name'];
                     $activity_desc = $row['activity_desc'];
                     $activity_image = $row['activity_image'];
@@ -68,7 +68,7 @@
                     ?>
                     
                     <tr>
-                        <td><?php echo $sn++;?></td>
+                        <td><?php echo $id;?></td>
                         <td><?php echo $activity_name; ?></td>
                         <td><?php echo $activity_desc; ?></td>
                         <td><?php 
@@ -87,7 +87,7 @@
                         <td><?php echo $activity_alt; ?></td>
                         <td>
                             <a href = "#" class = "btn-secondary">Edit Activity</a>
-                            <a href = "#" class = "btn-danger">Delete Activity</a>
+                            <a href = "<?php echo SITEURL; ?>admin/delete-activity.php?id=<?php echo $id; ?>&activity_image=<?php echo $activity_image;?>" class = "btn-danger">Delete Activity</a>
                         </td>
                     </tr>
                     <?php
