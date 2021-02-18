@@ -15,7 +15,7 @@
 
         <br><br>
 
-        <a href = "<?php echo SITEURL; ?>admin/add-destination.php" class = "btn-primary"> Add Destinations</a>
+        <a href = "<?php echo SITEURL; ?>admin/add-destination.php" class = "btn-primary">Add Destinations</a>
         
         <?php
             //Getting the session echo from the add-destinations
@@ -30,6 +30,24 @@
                 echo $_SESSION["upload"];
                 unset($_SESSION['upload']);
             }
+
+            if(isset($_SESSION["no-destination"]))
+            {
+                echo $_SESSION["no-destination"];
+                unset($_SESSION['no-destination']);
+            }
+
+            if(isset($_SESSION["update"]))
+            {
+                echo $_SESSION["update"];
+                unset($_SESSION['update']);
+            }
+
+            if(isset($_SESSION["remove"]))
+            {
+                echo $_SESSION["remove"];
+                unset($_SESSION['remove']);
+            }
         ?>
 
         <table class = "tbl-full">
@@ -40,6 +58,7 @@
                 <th>Image</th>
                 <th>Alternate Image Name</th>
                 <th>Actions</th>
+                
             </tr>
 
             <?php
@@ -56,7 +75,7 @@
                     //Display all these data
                     while($row = mysqli_fetch_assoc($res))
                     {
-                        $id = $row['destination_id'];
+                        $destination_id = $row['destination_id'];
                         $dest_name = $row['destination_name'];
                         $dest_desc = $row['destination_desc'];
                         $dest_image = $row['destination_image'];
@@ -65,14 +84,14 @@
                         ?>
 
                         <tr>
-                            <td><?php echo $id;?></td>
+                            <td><?php echo $destination_id;?></td>
                             <td><?php echo $dest_name; ?></td>
                             <td><?php echo $dest_desc; ?></td>
                             <td><img src="<?php echo SITEURL;?>images/destinations/<?php echo $dest_image;?>" width="100px"></td>
                             <td><?php echo $dest_alt; ?></td>
                             <td>
-                                <a href="#" class="btn-secondary">Edit Destination</a>
-                                <a href="#" class="btn-danger">Delete Destination</a>
+                                <a href="<?php echo SITEURL; ?>admin/update-destination.php?destination_id=<?php echo $destination_id;?>" class="btn-secondary">Edit Destination</a>
+                                <a href="<?php echo SITEURL; ?>admin/delete-destination.php?destination_id=<?php echo $destination_id;?>&image_name=<?php echo $dest_image; ?>" class="btn-danger">Delete Destination</a>
                             </td>
                         </tr>
 

@@ -109,9 +109,11 @@
                         //Stop the process
                         die();
                     }
-
-
                 }
+            }
+            else
+            {
+                $destination_image = "";
             }
 
             //3. Uploading to Database

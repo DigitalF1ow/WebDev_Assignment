@@ -53,6 +53,7 @@
                 <th>Image</th>
                 <th>Alternate Image Name</th>
                 <th>Actions</th>
+                <th></th>
             </tr>
         
         <?php
@@ -98,7 +99,7 @@
                                 }
                             ?>
                         <td><?php echo $activity_alt; ?></td>
-                        <td>
+                        <td colspan="2">
                             <a href = "#" class = "btn-secondary">Edit Activity</a>
                             <a href = "<?php echo SITEURL; ?>admin/delete-activity.php?activity_id=<?php echo $activity_id; ?>&activity_image=<?php echo $activity_image;?>" class = "btn-danger">Delete Activity</a>
                         </td>

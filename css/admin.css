@@ -107,6 +107,7 @@ table tr td
     padding: 2em;
 }
 
+
 .success
 {
     margin-top: 2em;
@@ -124,7 +125,6 @@ form
     text-align: left;
     display: inline-block;
 }
-
 
 .btn-primary
 {
