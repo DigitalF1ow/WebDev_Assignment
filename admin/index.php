@@ -22,23 +22,41 @@
                 echo $_SESSION['login'];
                 unset($_SESSION['login']);
             }
+
+            $sql = "SELECT * FROM destinations";
+            $res = mysqli_query($connect, $sql);
+
+            $destinations_count = mysqli_num_rows($res);
+
+
+            $sql = "SELECT * FROM activities";
+            $res = mysqli_query($connect, $sql);
+
+            $activities_count = mysqli_num_rows($res);
+
+            $sql = "SELECT * FROM form";
+
+            $res = mysqli_query($connect, $sql);
+            $reservation_count = mysqli_num_rows($res);
+
+
         ?>
         
         <div class="wrapper">
             <div class = "col-4">
-                <h1>Numbers</h1>
+                <h1><?php echo $activities_count; ?></h1>
                 <br/>
                 Activities
             </div>
 
             <div class = "col-4">
-                <h1>Numbers</h1>
+                <h1><?php echo $destinations_count; ?></h1>
                 <br/>
                 Destinations
             </div>
 
             <div class = "col-4">
-                <h1>Numbers</h1>
+                <h1><?php echo $reservation_count; ?></h1>
                 <br/>
                 Reservations
             </div>
