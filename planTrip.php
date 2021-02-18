@@ -54,17 +54,11 @@
         
     <h2 class="name">Tour</h2>
     <select class="option" name="tour">
-                    <option disabled="disabled" selected="selected" value="">--Choose option--</option>
-
-                    <?php
-                    
-
-                    
-                    ?>
-                    <option value = "tour1">Tour 1</option>
-                    <option value = "tour2">Tour 2</option>
-                    <option value = "tour3">Tour 3</option>
-                </select>
+        <option disabled="disabled" selected="selected" value="">--Choose option--</option>
+        <option value = "tour1">Package A - Tour of the Cultural Ways</option>
+        <option value = "tour2">Package B - Tour of the Fun Fantasies</option>
+        <option value = "tour3">Package C - All in one Bombastica</option>
+    </select>
     
     <h2 class="name">Meeting Date</h2>
     <input type="date" class ="meetingDate" name="meetingDate">

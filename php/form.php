@@ -16,7 +16,6 @@
 		$_SESSION['validation-failed'] = "<script>alert('Your form is incomplete. Please fill up the entire form')</script>";
 		header('location:'.SITEURL.'planTrip.php');
 		die();
-		
 	}
 
 	include "cost-Calculator.php";
