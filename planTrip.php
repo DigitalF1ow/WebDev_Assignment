@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tour Booking</title>
@@ -32,7 +33,7 @@
         <div id="name">
         <h2 class="name">Name </h2>
 
-        <input class="firstname" type="text" name="first_name"><br>
+        <input class="firstname" type="text" name="first_name" ><br>
         <label class="firstlabel">first name</label>
         <input class="lastname" type="text" name="last_name"><br>
         <label class="lastlabel">last name</label>
@@ -61,7 +62,7 @@
     </select>
     
     <h2 class="name">Meeting Date</h2>
-    <input type="date" class ="meetingDate" name="meetingDate">
+    <input type="date" class ="meetingDate" name="meeting_date">
     </select>
         
     <h2 class="name"> Number of Travelers</h2>
