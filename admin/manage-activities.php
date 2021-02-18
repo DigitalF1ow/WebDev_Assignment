@@ -49,6 +49,12 @@
                 unset($_SESSION['unauthorize']);
             }
             
+            
+            if(isset($_SESSION["no-destination"]))
+            {
+                echo $_SESSION["no-destination"];
+                unset($_SESSION['no-destination']);
+            }
         ?>
 
         <table class = "tbl-full">
@@ -100,7 +106,7 @@
                                 else
                                 {
                                     ?>
-                                    <img src="<?php echo SITEURL; ?>images/activities/<?php echo $activity_image?>" width= "100px">
+                                    <img src="<?php echo SITEURL; ?>images/activities/<?php echo $activity_image;?>" width= "100px">
                                     <?php
                                 }
                             ?>

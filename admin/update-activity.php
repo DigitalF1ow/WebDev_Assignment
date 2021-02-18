@@ -48,21 +48,14 @@
         }
     ?>
 
-    <?php
-    //To echo to the manage destinations page
-    if(isset($_SESSION['update']))
-    {
-        echo $_SESSION['update'];
-        unset($_SESSION['update']);
-    }
-    ?>
+
 
     <section class="main-content">
             <h1>Update Activities</h1>
 
             <br><br>
 
-            <form action= "" method= "POST" enctype = "multipart/form-data">
+            <form class= "info-form" action= "" method= "POST" enctype = "multipart/form-data">
 
                 <table class ="tbl-30">
                     <tr>
@@ -83,15 +76,16 @@
                         <td>Current Image: </td>
                         <td>
                             <?php
-                            if($current_activity_image == "")
-                            {
-                                echo "<div class='error'> Image not available.</div>";
-                            }
-                            else
+                            if($current_activity_image != "")
                             {
                                 ?>
                                 <img src = "<?php echo SITEURL; ?>images/activities/<?php echo $current_activity_image; ?>" width = "100px">
                                 <?php
+
+                            }
+                            else
+                            {
+                                echo "<div class='error'> Image not available.</div>";
                             }
                             ?>
                         </td>
@@ -107,7 +101,7 @@
                     <tr>
                         <td>Image Name: </td>
                         <td>
-                            <input type = "text" name= "activity_alt" value="<?php echo $activity_name; ?>">
+                            <input type = "text" name= "activity_alt" value="<?php echo $activity_alt; ?>">
                         </td>
                     </tr>
 
@@ -206,7 +200,7 @@
             }
 
             //Update Database
-            $sqlNew = "UPDATE destinations SET
+            $sqlNew = "UPDATE activities SET
                     activity_name = '$activity_name',
                     activity_desc = '$activity_desc',
                     activity_image = '$activity_image',
