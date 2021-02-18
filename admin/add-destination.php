@@ -94,7 +94,7 @@
                     //Src Path
                     $src= $_FILES['image']['tmp_name'];
                     //Destination path
-                    $dst = "../images/".$activity_image;
+                    $dst = "../images/destinations/".$destination_image;
 
                     //File Upload Process
                     $upload = move_uploaded_file($src, $dst);

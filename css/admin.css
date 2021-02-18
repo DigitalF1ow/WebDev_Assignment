@@ -106,11 +106,15 @@ table tr td
     padding: 1%;
 }
 
+.error
+{
+    color: red;
+}
+
 form
 {
     text-align: left;
     display: inline-block;
-    
 }
 
 

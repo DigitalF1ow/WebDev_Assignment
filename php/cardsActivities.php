@@ -24,7 +24,7 @@
                 $image = $row['activity_image'];
                 //get and print the values from individual columns
                 ?>
-                <div style="background-image: url(images/<?php echo $image ?>)" class='card mobile' ></div>
+                <div style="background-image: url(images/activities/<?php echo $image ?>)" class='card mobile' ></div>
                 
                 <?php
                 echo "<section class='rightside'>";
@@ -33,7 +33,7 @@
                 echo "</section>";
                 ?>
 
-                <div style="background-image: url(images/<?php echo $image ?>)" class='card desktop' ></div>
+                <div style="background-image: url(images/activities/<?php echo $image ?>)" class='card desktop' ></div>
                 <?php
             }
             else
@@ -41,7 +41,7 @@
                 $image = $row['activity_image'];
                 //get and print the values from individual columns
                 ?>
-                <div style="background-image: url(images/<?php echo $image ?>)" class='card' ></div>
+                <div style="background-image: url(images/activities/<?php echo $image ?>)" class='card' ></div>
                 <?php
                 echo "<section class='leftside'>";
                 echo "<h1>".$row['activity_name']."</h1>";

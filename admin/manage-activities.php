@@ -18,14 +18,18 @@
         <!-- Button to Add Admin -->
         <a href = "<?php echo SITEURL; ?>admin/add-activity.php" class = "btn-primary"> Add Activity</a>
 
-        <br /><br /><br />
-
         <?php
             if(isset($_SESSION["add"]))
             {
                 echo $_SESSION["add"];
                 unset($_SESSION['add']);
             }
+
+            if(isset($_SESSION["upload"]))
+            {
+                echo $_SESSION["upload"];
+                unset($_SESSION['upload']);
+            } 
         ?>
 
         <table class = "tbl-full">
