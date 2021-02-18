@@ -6,7 +6,7 @@
     if(isset($_GET['id']))
     {
         //Get Value and Delete
-        $reservation_id = $_GET['destination_id'];
+        $reservation_id = $_GET['id'];
 
         $sql = "DELETE FROM form WHERE id = $reservation_id";
 
