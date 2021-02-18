@@ -150,33 +150,6 @@ h1
 /*Responsive Web Design Part*/
 @media screen and (max-width: 776px) 
 {
-   .nav-header ul li
-   {
-      display: none;
-   } 
-
-   .nav-header-responsive ul li 
-   {
-      display: block;
-      margin: 2em;
-      text-align: center;
-   }
-
-   .nav-header-responsive ul li a
-{
-   text-decoration: none;
-   color: #fff;
-   font-size: 1em;
-}
- 
-   .menu-icon
-   {
-      display: block;
-      width: 30px;
-      cursor:pointer;
-      margin-left:40px;
-   }
-
    h1
    {
       text-align: center;

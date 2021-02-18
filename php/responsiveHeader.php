@@ -11,7 +11,6 @@
     echo "<li><a href='planTrip.php'>Plan Your Trip</a></li>";
     echo "</ul>";
     echo "</nav>";
-    echo "<img src = 'images/menu.png' class = 'menu-icon' alt='menuIcon'>";
     echo "</div>";
 
 ?>

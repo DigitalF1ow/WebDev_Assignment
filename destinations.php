@@ -32,23 +32,6 @@
     <?php
         include 'php/responsiveFooter.php';
     ?>
-
-<script>
-
-    function responsive()
-    {
-        var responsiveId = document.getElementById("navheader");
-        if(responsiveId.className === "nav-header")
-        {
-            responsiveId.className += "-responsive";
-        }
-        else
-        {
-            responsiveId.className = "nav-header";
-        }
-        
-    }
-</script>
     
 </body>
 </html>
