@@ -90,7 +90,7 @@
                             <td><img src="<?php echo SITEURL;?>images/destinations/<?php echo $dest_image;?>" width="100px"></td>
                             <td><?php echo $dest_alt; ?></td>
                             <td>
-                                <a href="<?php echo SITEURL; ?>admin/update-destination.php?destination_id=<?php echo $destination_id;?>" class="btn-secondary">Edit Destination</a>
+                                <a href="<?php echo SITEURL; ?>admin/update-destination.php?destination_id=<?php echo $destination_id;?>" class="btn-secondary">Update Destination</a>
                                 <a href="<?php echo SITEURL; ?>admin/delete-destination.php?destination_id=<?php echo $destination_id;?>&image_name=<?php echo $dest_image; ?>" class="btn-danger">Delete Destination</a>
                             </td>
                         </tr>

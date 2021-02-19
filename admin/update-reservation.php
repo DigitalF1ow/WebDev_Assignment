@@ -11,8 +11,7 @@
 <?php include 'partials/header.php' ?>
     
     <section class="main-content ">
-        <h1>Add Destination</h1>
-
+        <h1>Update Reservation</h1>
 
         <?php 
             //Check if ID has been set or not

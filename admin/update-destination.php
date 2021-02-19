@@ -11,7 +11,7 @@
 <?php include 'partials/header.php' ?>
     
     <section class="main-content ">
-        <h1>Add Destination</h1>
+        <h1>Update Destination</h1>
 
 
         <?php 

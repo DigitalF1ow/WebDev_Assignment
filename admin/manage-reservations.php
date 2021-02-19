@@ -91,7 +91,7 @@
                             <td><?php echo $row['numAdult']; ?></td>
                             <td><?php echo $row['numChild']; ?></td>
                             <td>
-                                <a href="<?php echo SITEURL; ?>admin/update-reservation.php?id=<?php echo $row['id'];?>" class="btn-secondary">Edit Form</a>
+                                <a href="<?php echo SITEURL; ?>admin/update-reservation.php?id=<?php echo $row['id'];?>" class="btn-secondary">Update Form</a>
                                 <a href="<?php echo SITEURL; ?>admin/delete-reservation.php?id=<?php echo $row['id'];?>" class="btn-danger">Delete Form</a>
                             </td>
                         </tr>
