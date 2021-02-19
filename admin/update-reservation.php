@@ -37,6 +37,7 @@
                     $email = $row['email'];
                     $area_code = $row['area_code'];
                     $phone_number = $row['phone_number'];
+                    $meeting_date = $row['meeting_date'];
                     $tour = $row['tour'];
                     $numAdult = $row['numAdult'];
                     $numChild = $row['numChild'];
@@ -107,6 +108,13 @@
                 </tr>
 
                 <tr>
+                    <td>Meeting Date: </td>
+                    <td>
+                        <input type = "date" name= "reservation_meeting" value="<?php echo $meeting_date; ?>">
+                    </td>
+                </tr>
+
+                <tr>
                     <td>Number of Adults: </td>
                     <td>
                         <input type = "text" name= "reservation_numAdults" value="<?php echo $numAdult; ?>">
@@ -143,6 +151,7 @@
             $email = $_POST['reservation_email'];
             $area_code = $_POST['reservation_areacode'];
             $phone_number = $_POST['reservation_phoneNumber'];
+            $meeting_date = $_POST['reservation_meeting'];
             $tour = $_POST['reservation_tour'];
             $numAdult = $_POST['reservation_numAdults'];
             $numChild = $_POST['reservation_numChildren'];
@@ -157,6 +166,7 @@
                     area_code = '$area_code',
                     phone_number = '$phone_number',
                     tour = '$tour',
+                    meeting_date = '$meeting_date',
                     numAdult = '$numAdult',
                     numChild = '$numChild'
                     WHERE id = $reservation_id";

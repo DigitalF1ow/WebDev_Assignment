@@ -17,7 +17,7 @@
             if(isset($_SESSION["add"]))
             {
                 echo $_SESSION["add"];
-                unset($_SESSION['add']);
+                unset($_SESSION["add"]);
             }
 
             if(isset($_SESSION["upload"]))
@@ -56,6 +56,7 @@
                 <th>Area Code</th>
                 <th>Phone Number</th>
                 <th>Tour</th>
+                <th>Meeting Date</th>
                 <th>Num Adults</th>
                 <th>Num Child</th>
                 <th>Actions</th>
@@ -86,6 +87,7 @@
                             <td><?php echo $row['area_code']; ?></td>
                             <td><?php echo $row['phone_number']; ?></td>
                             <td><?php echo $row['tour']; ?></td>
+                            <td><?php echo $row['meeting_date']; ?></td>
                             <td><?php echo $row['numAdult']; ?></td>
                             <td><?php echo $row['numChild']; ?></td>
                             <td>
