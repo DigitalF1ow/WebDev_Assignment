@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 17, 2021 at 12:00 PM
+-- Generation Time: Feb 19, 2021 at 02:38 AM
 -- Server version: 10.4.17-MariaDB
--- PHP Version: 8.0.1
+-- PHP Version: 7.3.26
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -20,6 +20,8 @@ SET time_zone = "+00:00";
 --
 -- Database: `tourism-database`
 --
+CREATE DATABASE IF NOT EXISTS `tourism-database` DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+USE `tourism-database`;
 
 -- --------------------------------------------------------
 
@@ -45,9 +47,7 @@ INSERT INTO `activities` (`activity_id`, `activity_name`, `activity_desc`, `acti
 (3, 'Hauntu', 'Hauntu is a blend of live theatre performance, role play and storytelling that comes together to provide an engaging experience that’s never been offered before in Kuala Lumpur. Much more than a haunted house, Hauntu features real actors, audience interaction, intricate mazes and interconnected storylines that centre around a colonial hotel filled with mystery and the paranormal. Participants not only get to take on roles within the storylines but also experience Malaysia in different eras from its pre-independence days right up to the present.', 'hantu.jpg', 'hauntu picture'),
 (4, 'Aquaria KLCC', 'Aquaria KLCC is a state-of-the-art oceanarium showcasing over 5,000 different exhibits of aquatic and land-bound creatures over a sprawling 60,000 square-foot space in the Concourse Level of the Kuala Lumpur Convention Centre. You can experience the cage rage where it is a custom-made underwater cage placed at the only \"Living Ocean\". We dare you get up-close and personal with our friendly sharks and other fascinating marine creatures!.', 'aquaria.png', 'aquaria KLCC picture'),
 (5, 'Petrosains Science Discovery Centre', 'Petrosains, The Discovery Centre - a museum about the science of petroleum? Hmm... sounds rather boring doesn\'t it? But actually it is not at all boring. This is one of Malaysia\'s best science museums with plenty to do and see whatever your age. It is located in Kuala Lumpur\'s most famous landmark, the Petronas Towers.', 'petrosains.jpg', 'Petrosains Science picture'),
-(7, 'Superpark Malaysia', 'SuperPark is the friendliest all-in-one indoor activity park on earth, delivering a unique experience of joyful play that excites and unites people all over the world, no matter their age or fitness level. Located in Avenue K Shopping Mall, the activity park boost over 25 fun, healthy and energizing activities in 3 themed areas including Flying Fox, Trampoline, Ice Skate, Baseball among others.', 'superpark.jpg', 'Superpark Malaysia picture'),
-(8, 'aaaa', 'aaa', 'Activity-Name-1032.jpg', 'aaaa'),
-(9, 'aaaa', 'dsdsdsd', 'Activity-Name-7583.jpg', 'ewewee');
+(6, 'Superpark Malaysia', 'SuperPark is the friendliest all-in-one indoor activity park on earth, delivering a unique experience of joyful play that excites and unites people all over the world, no matter their age or fitness level. Located in Avenue K Shopping Mall, the activity park boost over 25 fun, healthy and energizing activities in 3 themed areas including Flying Fox, Trampoline, Ice Skate, Baseball among others.', 'superpark.jpg', 'Superpark Malaysia picture');
 
 -- --------------------------------------------------------
 
@@ -110,9 +110,17 @@ CREATE TABLE `form` (
   `area_code` int(4) NOT NULL,
   `phone_number` int(15) NOT NULL,
   `tour` varchar(50) NOT NULL,
+  `meeting_date` date NOT NULL,
   `numAdult` int(11) NOT NULL,
   `numChild` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `form`
+--
+
+INSERT INTO `form` (`id`, `first_name`, `last_name`, `ic`, `email`, `area_code`, `phone_number`, `tour`, `meeting_date`, `numAdult`, `numChild`) VALUES
+(1, 'David', 'Toriel', '1112-212-22345', 'davidhasehoff@gmail.com', 14, 2014213, 'tour1', '2021-02-24', 4, 5);
 
 --
 -- Indexes for dumped tables
@@ -162,13 +170,13 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT for table `destinations`
 --
 ALTER TABLE `destinations`
-  MODIFY `destination_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `destination_id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT for table `form`
 --
 ALTER TABLE `form`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=68;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
