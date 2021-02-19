@@ -296,3 +296,16 @@ button:hover{
    text-align: center;
    padding: 0.5em 0;
 }
+
+.footer-link
+{
+   color: #5783fc;
+   text-align: center;
+   padding: 0.5em 0;
+   text-decoration: none;
+}
+
+.footer-link p
+{
+   color: #5783fc;
+}

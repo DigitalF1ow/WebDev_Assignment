@@ -146,7 +146,18 @@ h1
    text-align: center;
    padding: 0.5em 0;
 }
+.footer-link
+{
+   color: #5783fc;
+   text-align: center;
+   padding: 0.5em 0;
+   text-decoration: none;
+}
 
+.footer-link p
+{
+   color: #5783fc;
+}
 /*Responsive Web Design Part*/
 @media screen and (max-width: 776px) 
 {

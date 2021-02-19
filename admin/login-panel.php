@@ -23,7 +23,7 @@
         User name:<br>
         <input type="text" name="username" placeholder="Enter username here"><br><br>
         Password: <br>
-        <input type="text" name="password" placeholder="Enter password here"><br><br>
+        <input type="password" name="password" placeholder="Enter password here"><br><br>
 
         <input type="submit" name="submit" value="Login" class="btn-primary">
         </form>
